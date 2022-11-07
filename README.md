@@ -11,7 +11,10 @@ npm run dev
 ![ciscord](screenshots/ciscord.png)
 
 # Landing
-Please contact maintainer
+https://github.com/ciscord/ciscord-land
 
 # Widget
-Please contact maintainer
+https://github.com/ciscord/ciscord-widget
+
+# Backend
+https://github.com/ciscord/ciscord-backend
