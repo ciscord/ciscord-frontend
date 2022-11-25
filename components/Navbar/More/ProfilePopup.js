@@ -32,7 +32,7 @@ const ModalMore = ({ opened, close }) => {
     <S.Container opened={opened} id="modal-more">
       {user && (
         <S.Header>
-          <S.Avatar src={user.image} name={user.username} />
+          <S.Avatar name={user.username} />
           <S.Info>
             <S.Fullname>{user.fullname}</S.Fullname>
             <S.Username>{`@${user.username}`}</S.Username>

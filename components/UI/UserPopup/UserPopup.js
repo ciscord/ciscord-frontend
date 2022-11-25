@@ -21,7 +21,7 @@ const UserPopup = ({ username, opened, close, getPosition }) => {
       <S.Container position={getPosition()}>
         <S.Info>
           <S.Header>
-            <S.Avatar src={user.user.image} name={user.user.username} />
+            <S.Avatar name={user.user.username} />
             <a
               href={`https://twitter.com/${user.user.username}`}
               style={{ textDecoration: 'none' }}
