@@ -87,7 +87,7 @@ const PrivateChat = ({ username, channel }) => {
 
   return (
     <S.Wrapper key={channel.id} onClick={onClick}>
-      <S.Avatar src={unreadMessage.user.image} name={unreadMessage.user.username} width={36} />
+      <S.Avatar src={`https://ui-avatars.com/api/?name=${unreadMessage.user.username}`} name={unreadMessage.user.username} width={36} />
       <div className="user-message-box__message">
         <div className="user-message-box__info">
           <span className="user-message-box__name">

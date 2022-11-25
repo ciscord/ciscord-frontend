@@ -26,7 +26,7 @@ const ProfileSettings = () => {
         </S.Header>
         <S.Body>
           <S.AvatarBlock>
-            <S.Avatar src={user.image} />
+            <S.Avatar src={user.fullname} />
           </S.AvatarBlock>
           <Input label="Full name" type="text" value={user.fullname} />
           <Input label="Your username" type="text" value={user.username} />

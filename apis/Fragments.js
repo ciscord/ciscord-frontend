@@ -9,6 +9,9 @@ export const MessagesFragment = gql`
       id
       username
       image
+      role {
+        color
+      }
     }
     channel {
       url
@@ -31,6 +34,9 @@ export const MessagesFragment = gql`
         id
         username
         image
+        role {
+          color
+        }
       }
       attachments {
         id
