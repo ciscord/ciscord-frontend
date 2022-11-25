@@ -5,6 +5,7 @@ import back from 'public/icons/back.svg';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
+  background: black;
 `;
 
 export const Form = styled.div`
@@ -14,7 +15,6 @@ export const Form = styled.div`
   max-width: calc(50vw - 268px);
   display: flex;
   flex-direction: column;
-  background: white;
   justify-content: space-between;
 `;
 

@@ -8,9 +8,10 @@ import { createUploadLink } from 'apollo-upload-client';
 import { getMainDefinition } from 'apollo-utilities';
 import { COMPANY_NAME } from 'utils/config';
 
-const uri = `${process.env.BACKEND_URL}/graphql`;
-const wsUri = `${process.env.WS_URL}/`;
-
+const uri = `http://localhost:4000/graphql`;
+const wsUri = `ws://localhost:4000`;
+console.log(uri, 'uri');
+console.log(wsUri, 'wsUri');
 export const httpLink = new HttpLink({
   uri,
   credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
@@ -35,6 +36,7 @@ export const request = async operation => {
   operation.setContext({
     headers: {
       authorization: token ? `Bearer ${token}` : '',
+      "x-hasura-admin-secret": "9R5zjnzbmUlI6DgZaAmUQzwJPdVpiCj3ik96xQsYm9wWENmfej7uPCs4KyOTZTbw",
       'ciscord-tenant': COMPANY_NAME(),
     },
   });

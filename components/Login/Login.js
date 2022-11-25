@@ -57,24 +57,12 @@ const Login = () => {
         <S.Text>
           You can log in via
           <br />
-          twitter
+          email
         </S.Text>
-        <TwitterLogin
-          loginUrl={`${process.env.BACKEND_URL}/api/v1/auth/twitter`}
-          onFailure={onFailed}
-          onSuccess={onSuccessTwitter}
-          requestTokenUrl={`${process.env.BACKEND_URL}/api/v1/auth/twitter/reverse`}
-          showIcon
-          forceLogin
-          style={{ padding: 0, borderRadius: 6 }}
-        >
-          <S.Button>
-            <S.TwitterIcon>
-              <use xlinkHref={`${twitterSVG}#icon-twitter`} />
-            </S.TwitterIcon>
-            Sign in with Twitter
+
+          <S.Button onClick={login}>
+            Sign in
           </S.Button>
-        </TwitterLogin>
       </S.Inner>
       {error && <S.Error>{error.graphQLErrors[0].message}</S.Error>}
     </S.Container>

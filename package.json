@@ -4,7 +4,7 @@
   "description": "ciscord",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/ciscord/ciscord"
+    "url": "https://github.com/ciscord/ciscord-frontend"
   },
   "main": "index.js",
   "scripts": {

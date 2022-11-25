@@ -7,7 +7,7 @@ const withOffline = require('next-offline');
 const webpack = require('webpack');
 const withSourceMaps = require('@zeit/next-source-maps');
 
-dotenv.config({ path: `../.env.${process.env.NODE_ENV}` });
+dotenv.config({ path: `../.env` });
 
 module.exports = withSourceMaps(
   withOffline(

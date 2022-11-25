@@ -13,7 +13,7 @@ const Tabs = () => {
   const { communitiesLoaded, setCommunitiesLoaded } = useContext(AppContext);
   const { user } = useContext(UserContext);
 
-  const { data: { communities: allCommunities = [] } = {}, loading: communitiesLoading } = useQuery(
+  const { data: { communities: allCommunities = [] } = {}, loading: communitiesLoading, error } = useQuery(
     GET_COMMUNITIES,
     {
       onCompleted: () => {
@@ -23,6 +23,8 @@ const Tabs = () => {
       },
     }
   );
+
+  if (error) {error}
 
   const {
     query: { community: selectedCommunity },
