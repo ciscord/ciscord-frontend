@@ -87,7 +87,7 @@ const PrivateChat = ({ username, channel }) => {
 
   return (
     <S.Wrapper key={channel.id} onClick={onClick}>
-      <S.Avatar src={`https://ui-avatars.com/api/?name=${unreadMessage.user.username}`} name={unreadMessage.user.username} width={36} />
+      <S.Avatar name={unreadMessage.user.username} width={36} />
       <div className="user-message-box__message">
         <div className="user-message-box__info">
           <span className="user-message-box__name">
@@ -95,13 +95,13 @@ const PrivateChat = ({ username, channel }) => {
             <S.Status online={unreadMessage.user.isOnline} />
           </span>
           <span className="user-message-box__date">
-            {chatTime(unreadMessage.messages[unreadMessage.messages.length - 1].createdAt)}
+            {unreadMessage.messages.length > 0 && chatTime(unreadMessage.messages[unreadMessage.messages.length - 1].createdAt)}
           </span>
         </div>
         <div className="user-message-box__text">
           <div className="text">
             <p className="fill">
-              {transformMessage(
+              {unreadMessage.messages.length > 0 && transformMessage(
                 unreadMessage.messages[unreadMessage.messages.length - 1].body,
                 false
               )}
