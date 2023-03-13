@@ -39,6 +39,9 @@ export const GET_COMMUNITIES = gql`
       notifications {
         id
       }
+      channels {
+        id
+      }
     }
   }
 `;
