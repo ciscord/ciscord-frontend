@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { useQuery, useMutation } from '@apollo/client';
 import { COMPANY_NAME } from 'utils/config';
+import { withTheme } from 'styled-components';
 // import { useMutation } from '@apollo/client';
 
 import { GET_CHANNEL_NOTIFICATIONS, MARK_CHANNEL_NOTIFICATIONS_AS_READ } from 'apis/Channel';
@@ -53,4 +54,4 @@ const Channel = ({ channel }) => {
   );
 };
 
-export default Channel;
+export default withTheme(Channel);

@@ -1,4 +1,5 @@
 import * as S from './styled';
+import { withTheme } from 'styled-components';
 
 const Input = ({
   field,
@@ -36,4 +37,4 @@ const Input = ({
   </S.InputContainer>
 );
 
-export default Input;
+export default withTheme(Input);
