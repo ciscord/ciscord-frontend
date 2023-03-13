@@ -62,7 +62,7 @@ const ParentMessageWrapper = ({ message, children, isEditing, isPreview, isDelet
       onMouseLeave={() => setShowUserPopup(false)}
       isDeleted={isDeleted}
     >
-      <S.Avatar name={message.author.username} color={message.author.role.color} />
+      <S.Avatar name={message.author.username} color={message.author.role.color} src={message.author.image} />
 
       <S.Content>
         <S.User>

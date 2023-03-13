@@ -5,12 +5,11 @@ import back from 'public/icons/back.svg';
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  background: black;
 `;
 
 export const Form = styled.div`
   flex: 1;
-  padding: 0 134px;
+  padding: 200px 134px;
   width: calc(50vw - 268px);
   max-width: calc(50vw - 268px);
   display: flex;
