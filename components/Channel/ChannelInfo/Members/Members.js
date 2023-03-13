@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useLazyQuery } from '@apollo/react-hooks';
+import { useLazyQuery } from '@apollo/client';
 import { useEscapeToClose } from 'hooks';
 import { COMPANY_NAME } from 'utils/config';
 import { GET_COMMUNITY } from 'apis/Community';

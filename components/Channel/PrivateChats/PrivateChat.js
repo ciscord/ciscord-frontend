@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { UserContext } from 'context/UserContext';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { USER_WENT_ONLINE, USER_WENT_OFFLINE } from 'apis/User';
 import { GET_UNREAD_MESSAGES } from 'apis/Message';
 import { NOTIFICATIONS_SUBSCRIPTION } from 'apis/Notification';

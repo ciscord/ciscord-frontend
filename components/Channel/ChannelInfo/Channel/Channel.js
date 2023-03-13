@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation } from '@apollo/client';
 import { COMPANY_NAME } from 'utils/config';
-// import { useMutation } from '@apollo/react-hooks';
+// import { useMutation } from '@apollo/client';
 
 import { GET_CHANNEL_NOTIFICATIONS, MARK_CHANNEL_NOTIFICATIONS_AS_READ } from 'apis/Channel';
 import { ChannelPlaceholder } from './Channel.placeholder';

@@ -1,7 +1,7 @@
 import { useEffect, useContext, useState } from 'react';
 import { UserContext } from 'context/UserContext';
 import { useRouter } from 'next/router';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { useEscapeToClose } from 'hooks';
 import { COMPANY_NAME } from 'utils/config';
 import { GET_PRIVATE_CHANNELS } from 'apis/Channel';
