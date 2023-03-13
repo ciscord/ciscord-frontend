@@ -1,34 +1,26 @@
-import { ApolloLink, split, Observable } from 'apollo-link';
-import { onError } from 'apollo-link-error';
-import { HttpLink } from 'apollo-link-http';
-import { WebSocketLink } from 'apollo-link-ws';
+// import { ApolloLink, split, Observable } from 'apollo-link';
+import { split, HttpLink, ApolloLink, Observable } from '@apollo/client';
+import { onError } from "@apollo/client/link/error";
+import { createUploadLink }from 'apollo-upload-client';
+import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
+import { createClient } from 'graphql-ws';
 import fetch from 'isomorphic-unfetch';
 import Cookies from 'js-cookie';
-import { createUploadLink } from 'apollo-upload-client';
-import { getMainDefinition } from 'apollo-utilities';
+import { getMainDefinition } from '@apollo/client/utilities';
 import { COMPANY_NAME } from 'utils/config';
 
 const uri = `http://localhost:4000/graphql`;
-const wsUri = `ws://localhost:4000`;
+const wsUri = `ws://localhost:4000/graphql`;
 console.log(uri, 'uri');
 console.log(wsUri, 'wsUri');
 export const httpLink = new HttpLink({
   uri,
-  credentials: 'same-origin', // Additional fetch() options like `credentials` or `headers`
-  fetch,
 });
 
 export const wsLink = process.browser
-  ? new WebSocketLink({
-      uri: wsUri,
-      options: {
-        reconnect: true,
-        connectionParams: {
-          token: Cookies.get('token'),
-          'ciscord-tenant': COMPANY_NAME(),
-        },
-      },
-    })
+  ? new GraphQLWsLink(createClient({
+    url: wsUri,
+  }))
   : () => console.log('SSR');
 
 export const request = async operation => {
@@ -50,11 +42,6 @@ export const errorLink = onError(({ graphQLErrors, networkError }) => {
   }
   if (networkError) console.log(`[Network error]: ${networkError}`);
 });
-
-const isSubscriptionOperation = ({ query }) => {
-  const { kind, operation } = getMainDefinition(query);
-  return kind === 'OperationDefinition' && operation === 'subscription';
-};
 
 export const requestLink = new ApolloLink(
   (operation, forward) =>
@@ -80,5 +67,16 @@ export const requestLink = new ApolloLink(
 const uploadLink = createUploadLink({ uri });
 
 export const link = process.browser
-  ? split(isSubscriptionOperation, wsLink, uploadLink)
+  ? split(
+    ({ query }) => {
+      const definition = getMainDefinition(query);
+      return (
+        definition.kind === 'OperationDefinition' &&
+        definition.operation === 'subscription'
+      );
+    },
+    wsLink,
+    httpLink,
+    uploadLink,
+  )
   : uploadLink;
