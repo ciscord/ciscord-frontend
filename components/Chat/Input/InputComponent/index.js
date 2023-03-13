@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext, useCallback } from 'react';
 import { UserContext } from 'context/UserContext';
 import { useRouter } from 'next/router';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { Mention } from 'react-mentions';
 import { useKeyboardShortcut, useEscapeToClose } from 'hooks';
 import { throttle } from 'lodash';

@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { REPLY_MESSAGE, SEND_NOTIFICATION } from 'apis/Message';
 import InputComponent from 'components/Chat/Input/InputComponent';
 import * as S from './styled';

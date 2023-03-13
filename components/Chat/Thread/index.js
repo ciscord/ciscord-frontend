@@ -1,6 +1,6 @@
 import { useCallback, useState, useRef, useEffect } from 'react';
 import { useDropzone } from 'react-dropzone';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { EDIT_REPLY_MESSAGE } from 'apis/Message';
 import { CloseIcon } from 'components/UI/Icons';
 

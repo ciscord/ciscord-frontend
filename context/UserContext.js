@@ -1,5 +1,5 @@
 import { useRef, useState, createContext, useContext, useEffect } from 'react';
-import { useLazyQuery, useMutation } from '@apollo/react-hooks';
+import { useLazyQuery, useMutation } from '@apollo/client';
 import Router from 'next/router';
 import Cookies from 'js-cookie';
 import { COMPANY_NAME } from 'utils/config';

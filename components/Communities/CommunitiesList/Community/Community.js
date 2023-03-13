@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { UserContext } from 'context/UserContext';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 
 import { COMPANY_NAME } from 'utils/config';
 import { FOLLOW_COMMUNITY, UNFOLLOW_COMMUNITY } from 'apis/Community';

@@ -2,7 +2,7 @@ import { useRef, useCallback, useContext } from 'react';
 import { useWindowDimensions } from 'hooks';
 import { UserContext } from 'context';
 import { useRouter } from 'next/router';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { toast } from 'react-toastify';
 import { PortalWithState } from 'react-portal';
 

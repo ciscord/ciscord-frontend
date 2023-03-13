@@ -1,6 +1,6 @@
 import { useEffect, useContext } from 'react';
 import { useRouter } from 'next/router';
-import { useLazyQuery } from '@apollo/react-hooks';
+import { useLazyQuery } from '@apollo/client';
 import { useKeyboardShortcut } from 'hooks';
 
 import { UserContext } from 'context/UserContext';

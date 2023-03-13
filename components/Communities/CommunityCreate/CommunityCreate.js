@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { UserContext } from 'context/UserContext';
 import { useRouter } from 'next/router';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { useEscapeToClose } from 'hooks';
 import { Formik, Form, Field } from 'formik';
 import * as yup from 'yup';

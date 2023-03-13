@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useMutation, useLazyQuery } from '@apollo/react-hooks';
+import { useMutation, useLazyQuery } from '@apollo/client';
 import { SEARCH_USERS } from 'apis/User';
 import { GET_ROLE, ATTACH_ROLE_TO_USER, DEATTACH_ROLE_TO_USER } from 'apis/Role';
 import { SearchIcon } from 'components/UI/Icons';

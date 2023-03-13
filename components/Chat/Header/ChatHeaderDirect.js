@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { GET_USER, USER_WENT_ONLINE, USER_WENT_OFFLINE } from 'apis/User';
 import ProgressBar from 'components/UI/ProgressBar';
 import { COMPANY_NAME } from 'utils/config';

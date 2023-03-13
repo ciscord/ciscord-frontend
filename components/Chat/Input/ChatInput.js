@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { UserContext } from 'context/UserContext';
 import dynamic from 'next/dynamic';
 import cuid from 'cuid';

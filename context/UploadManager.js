@@ -1,5 +1,5 @@
 import { useState, createContext, useEffect, useCallback } from 'react';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { UPLOAD_FILE } from 'apis/File';
 
 const UploadManagerContext = createContext({

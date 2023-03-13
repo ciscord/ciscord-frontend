@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 
-import { useMutation, useLazyQuery } from '@apollo/react-hooks';
+import { useMutation, useLazyQuery } from '@apollo/client';
 import { GET_ROLE, CREATE_ROLE, UPDATE_ROLE, DELETE_ROLE } from 'apis/Role';
 
 import Popup from 'components/UI/Popup';

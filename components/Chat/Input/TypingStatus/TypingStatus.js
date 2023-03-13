@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useRouter } from 'next/router';
-import { useSubscription } from '@apollo/react-hooks';
+import { useSubscription } from '@apollo/client';
 import gql from 'graphql-tag';
 import { COMPANY_NAME } from 'utils/config';
 import { UserContext } from 'context/UserContext';

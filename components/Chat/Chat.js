@@ -1,6 +1,6 @@
 import { useEffect, useCallback, useState, useContext } from 'react';
 import { useRouter } from 'next/router';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation } from '@apollo/client';
 import { useDropzone } from 'react-dropzone';
 import { throttle } from 'lodash';
 
@@ -127,6 +127,7 @@ const Chat = () => {
     if (channelUrl && !subscriptChannels[`${communityUrl}/${channelUrl}`]) {
       subscriptChannels[`${communityUrl}/${channelUrl}`] = true;
       setSubscriptChannels(subscriptChannels);
+      console.log('===Subscriptions==', subscriptChannels)
       Subscriptions({ subscribeToMore, channelUrl, communityUrl });
     }
 
@@ -170,28 +171,30 @@ const Chat = () => {
   };
 
   const handleScrollBottomReachEnd = async () => {
-    try {
-      const result = await fetchMore({
-        query: GET_NEXT_MESSAGES,
-        variables: {
-          channelUrl: `${communityUrl}/${channelUrl}`,
-          cursorId: messages[messages.length - 1].id,
-        },
-        updateQuery: (prev, { fetchMoreResult }) => {
-          if (!fetchMoreResult.messages.length) {
-            setLastMessageReached(true);
-            return prev;
-          }
+    console.log('why this one?')
+    // try {
+    //   const result = await fetchMore({
+    //     query: GET_NEXT_MESSAGES,
+    //     variables: {
+    //       channelUrl: `${communityUrl}/${channelUrl}`,
+    //       cursorId: messages[messages.length - 1].id,
+    //     },
+    //     updateQuery: (prev, { fetchMoreResult }) => {
+    //       if (!fetchMoreResult.messages.length) {
+    //         setLastMessageReached(true);
+    //         return prev;
+    //       }
 
-          const mergedMessages = [].concat(prev.messages, fetchMoreResult.messages);
-          return { ...prev, messages: mergedMessages };
-        },
-      });
+    //       const mergedMessages = [].concat(prev.messages, fetchMoreResult.messages);
+    //       return { ...prev, messages: mergedMessages };
+    //     },
+    //   });
 
-      return result.data.messages;
-    } catch (error) {
-      return [];
-    }
+    //   return result.data.messages;
+    // } catch (error) {
+    //   return [];
+    // }
+    return [];
   };
 
   const fetchMessagesById = async id => {

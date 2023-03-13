@@ -1,6 +1,5 @@
-import { ApolloLink } from 'apollo-link';
-import { ApolloClient } from 'apollo-client';
-import { InMemoryCache } from 'apollo-cache-inmemory';
+import { from } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { errorLink, requestLink, link, request } from './links';
 
 export default function createApolloClient(initialState, ctx) {
@@ -8,7 +7,7 @@ export default function createApolloClient(initialState, ctx) {
   // use it to extract auth headers (ctx.req) or similar.
   return new ApolloClient({
     ssrMode: Boolean(ctx),
-    link: ApolloLink.from([
+    link: from([
       errorLink,
       // requestLink.concat(uploadLink),
       requestLink,
@@ -16,5 +15,6 @@ export default function createApolloClient(initialState, ctx) {
     ]),
     request,
     cache: new InMemoryCache().restore(initialState),
+    connectToDevTools: true
   });
 }

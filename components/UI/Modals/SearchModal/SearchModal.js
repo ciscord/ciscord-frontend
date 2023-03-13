@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import { useState, useRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import Link from 'next/link';
 import { throttle } from 'lodash';
 import Message from 'components/Chat/Message';

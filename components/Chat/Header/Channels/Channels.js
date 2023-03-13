@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 
 import { COMPANY_NAME } from 'utils/config';
 import { GET_CHANNELS, NEW_CHANNEL_MESSAGE_SUBSCRIPTION } from 'apis/Channel';

@@ -1,7 +1,7 @@
 import { useRef, useState, useCallback } from 'react';
 import { useWindowDimensions } from 'hooks';
 import { PortalWithState } from 'react-portal';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { TOGGLE_REACTION } from 'apis/Message';
 
 import EmojiPicker from 'components/UI/EmojiPicker/EmojiPicker';

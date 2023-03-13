@@ -1,7 +1,7 @@
 // Refactor: createUsersList
 import { useContext } from 'react';
 import { UserContext } from 'context';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { Emoji } from 'emoji-mart';
 
 import { TOGGLE_REACTION } from 'apis/Message';

@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from 'react';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import InlineEdit from 'components/UI/InlineEdit/Parent';
 
 import { EDIT_CHANNEL } from 'apis/Channel';

@@ -1,7 +1,7 @@
 import TwitterLogin from 'react-twitter-auth/lib/react-twitter-auth-component';
 import { useContext } from 'react';
 import { useRouter } from 'next/router';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 import { useEscapeToClose } from 'hooks';
 
 import { UserContext } from 'context/UserContext';

@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { useQuery } from '@apollo/react-hooks';
+import { useQuery } from '@apollo/client';
 import { GET_USER } from 'apis/User';
 import rightIcon from 'public/icons/right3.svg';
 

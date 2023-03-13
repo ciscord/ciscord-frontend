@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { UserContext } from 'context';
-import { useMutation } from '@apollo/react-hooks';
+import { useMutation } from '@apollo/client';
 
 import { COMPANY_NAME } from 'utils/config';
 import { CREATE_CHANNEL } from 'apis/Channel';

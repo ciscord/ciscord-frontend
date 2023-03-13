@@ -1,5 +1,5 @@
 import { useState, useEffect, useContext } from 'react';
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import { useQuery, useMutation } from '@apollo/client';
 import { UserContext } from 'context/UserContext';
 import { COMPANY_NAME } from 'utils/config';
 import {

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Formik, Form, Field } from 'formik';
-import { useMutation, useApolloClient } from '@apollo/react-hooks';
+import { useMutation, useApolloClient } from '@apollo/client';
 import { ButtonPrimary } from 'components/UI/Button/Button';
 import { Input } from 'components/UI/Input';
 import { UserContext } from 'context/UserContext';
