@@ -32,7 +32,7 @@ export const GET_CHANNELS = gql`
 `;
 
 export const GET_CHANNEL = gql`
-  query channel($url: String) {
+  query channel($url: String!) {
     channel(url: $url) {
       id
       name
