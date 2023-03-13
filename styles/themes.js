@@ -90,7 +90,7 @@ export const themeDark = {
 
   chatBG: '#2f3136',
   chatText: '#fff',
-  chatAuthor: '#fff',
+  chatAuthor: '#919498',
   chatDate: '#94979B',
   chatTopicText: '#95989C',
   chatTopicBorder: '#95989C',
