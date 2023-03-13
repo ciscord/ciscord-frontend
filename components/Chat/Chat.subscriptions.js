@@ -18,9 +18,9 @@ const Subscribe = ({ subscribeToMore, communityUrl, channelUrl }) => {
     updateQuery: (prev, { subscriptionData }) => {
       if (!subscriptionData.data) return prev;
       const { newMessage } = subscriptionData.data;
-
+      console.log(newMessage, '====newMessage=====')
       let result = { ...prev };
-      if (result.messages[0].channel.url === newMessage.channel.url) {
+      if (result?.messages?.[0]?.channel.url === newMessage.channel.url) {
         const messagesData = result.messages.filter(message => message.id === newMessage.id);
         if (messagesData.length === 0) {
           result = {

@@ -151,7 +151,7 @@ export const SEND_MESSAGE = gql`
   mutation sendMessage(
     $body: String!
     $channelUrl: String!
-    $attachments: [String!]
+    $attachments: [String]
     $urlList: [String!]
     $mentions: [String!]
     $communityUrl: String!
@@ -220,7 +220,7 @@ export const REPLY_MESSAGE = gql`
   mutation replyMessage(
     $parentId: String!
     $body: String!
-    $attachments: [String!]
+    $attachments: [String]
     $urlList: [String!]
   ) {
     replyMessage(parentId: $parentId, body: $body, attachments: $attachments, urlList: $urlList) {

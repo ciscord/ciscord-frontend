@@ -172,29 +172,34 @@ const Chat = () => {
 
   const handleScrollBottomReachEnd = async () => {
     console.log('why this one?')
-    // try {
-    //   const result = await fetchMore({
-    //     query: GET_NEXT_MESSAGES,
-    //     variables: {
-    //       channelUrl: `${communityUrl}/${channelUrl}`,
-    //       cursorId: messages[messages.length - 1].id,
-    //     },
-    //     updateQuery: (prev, { fetchMoreResult }) => {
-    //       if (!fetchMoreResult.messages.length) {
-    //         setLastMessageReached(true);
-    //         return prev;
-    //       }
-
-    //       const mergedMessages = [].concat(prev.messages, fetchMoreResult.messages);
-    //       return { ...prev, messages: mergedMessages };
-    //     },
-    //   });
-
-    //   return result.data.messages;
-    // } catch (error) {
-    //   return [];
-    // }
-    return [];
+    try {
+      if (!loading) {
+        const result = await fetchMore({
+          query: GET_NEXT_MESSAGES,
+          variables: {
+            channelUrl: `${communityUrl}/${channelUrl}`,
+            cursorId: messages[messages.length - 1].id,
+          },
+          updateQuery: (prev, { fetchMoreResult }) => {
+            if (!fetchMoreResult.messages.length) {
+              setLastMessageReached(true);
+              return prev;
+            }
+  
+            const mergedMessages = [].concat(prev.messages, fetchMoreResult.messages);
+            return { ...prev, messages: mergedMessages };
+          },
+        });
+  
+        return result.data.messages;
+      }
+      
+    } catch (error) {
+      console.log(error)
+    } finally {
+      return [];
+    }
+    
   };
 
   const fetchMessagesById = async id => {

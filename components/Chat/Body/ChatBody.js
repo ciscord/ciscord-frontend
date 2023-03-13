@@ -123,7 +123,6 @@ const ChatBody = ({
       handleReachBottom(container);
     }
   };
-
   return (
     <>
       <S.Container
