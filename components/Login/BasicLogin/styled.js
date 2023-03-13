@@ -95,4 +95,5 @@ export const Button = styled.button.attrs({
 
 export const Footer = styled.footer`
   margin-top: 35px;
+  display: flex;
 `;

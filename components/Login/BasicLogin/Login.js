@@ -1,10 +1,13 @@
 import { useContext } from 'react';
 import { Formik, Form, Field } from 'formik';
+import { withTheme } from 'styled-components';
+import { useRouter } from 'next/router'
 import { useMutation } from '@apollo/client';
-import { ButtonPrimary } from 'components/UI/Button/Button';
+import { ButtonPrimary, Button } from 'components/UI/Button/Button';
 import { Input } from 'components/UI/Input';
 import { UserContext } from 'context/UserContext';
 import { LOGIN } from 'apis/User';
+import { COMPANY_NAME } from 'utils/config';
 import * as S from './styled';
 
 const initialValues = {
@@ -15,6 +18,8 @@ const initialValues = {
 
 const Login = () => {
   const { signin } = useContext(UserContext);
+  const router = useRouter()
+
   const onCompleted = data => {
     console.log(JSON.stringify(data))
     signin(data.login.token);
@@ -68,6 +73,16 @@ const Login = () => {
                   >
                     {isSubmitting ? 'Log in...' : 'Log in'}
                   </ButtonPrimary>
+
+                  <Button
+                    type="button"
+                    name="button"
+                    disabled={isSubmitting}
+                    style={{ marginLeft: 20 }}
+                    onClick={() => router.push(`/${COMPANY_NAME()}/signup`)}
+                  >
+                    Sign Up
+                  </Button>
                 </S.Footer>
               </Form>
             )}
@@ -83,4 +98,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default withTheme(Login);
