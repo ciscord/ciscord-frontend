@@ -87,11 +87,13 @@ const Subscribe = ({ subscribeToMore, communityUrl, channelUrl }) => {
       const { newReaction: reaction } = subscriptionData.data;
 
       const updatedMessageIndex = prev.messages.findIndex(({ id }) => id === reaction.message.id);
-      prev.messages[updatedMessageIndex].reactions.push(reaction);
+      let _messages = cloneDeep(prev.messages)
+
+      _messages[updatedMessageIndex].reactions.push(reaction);
 
       return {
         ...prev,
-        messages: prev.messages,
+        messages: _messages,
       };
     },
   });
@@ -109,17 +111,18 @@ const Subscribe = ({ subscribeToMore, communityUrl, channelUrl }) => {
       const updatedMessageIndex = prev.messages.findIndex(
         ({ id }) => id === updatedReaction.message.id
       );
-      const updatedMessages = [...prev.messages];
+      
+      let _messages = cloneDeep(prev.messages)
 
-      const reactionIndex = updatedMessages[updatedMessageIndex].reactions.findIndex(
+      const reactionIndex = _messages[updatedMessageIndex].reactions.findIndex(
         ({ id }) => id === updatedReaction.id
       );
 
-      updatedMessages[updatedMessageIndex].reactions.splice(reactionIndex, 1, updatedReaction);
+      _messages[updatedMessageIndex].reactions.splice(reactionIndex, 1, updatedReaction);
 
       return {
         ...prev,
-        messages: updatedMessages,
+        messages: _messages,
       };
     },
   });
@@ -135,8 +138,9 @@ const Subscribe = ({ subscribeToMore, communityUrl, channelUrl }) => {
 
       const { id: reactionId } = subscriptionData.data.removedReaction;
 
-      const updatedMessages = prev.messages.map(message => ({
-        ...message,
+      let _messages = cloneDeep(prev.messages)
+      const updatedMessages = _messages.map(message => ({
+        ..._messages,
         reactions: message.reactions.filter(({ id }) => id !== reactionId),
       }));
 
