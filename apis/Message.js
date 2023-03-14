@@ -104,6 +104,7 @@ export const NEW_REACTION_SUBSCRIPTION = gql`
       users {
         id
         username
+        image
       }
       message {
         id
@@ -122,6 +123,7 @@ export const UPDATE_REACTION_SUBSCRIPTION = gql`
       users {
         id
         username
+        image
       }
       message {
         id
@@ -220,6 +222,16 @@ export const REPLY_MESSAGE = gql`
   ) {
     replyMessage(parentId: $parentId, body: $body, urlList: $urlList) {
       id
+      body
+      urlList
+      author {
+        id
+        username
+        image
+        role {
+          color
+        }
+      }
       parent {
         id
       }
