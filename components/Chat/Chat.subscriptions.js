@@ -1,3 +1,4 @@
+import { cloneDeep } from 'lodash';
 import {
   MESSAGES_SUBSCRIPTION,
   MESSAGE_EDIT_SUBSCRIPTION,
@@ -48,10 +49,11 @@ const Subscribe = ({ subscribeToMore, communityUrl, channelUrl }) => {
       const { editMessage } = subscriptionData.data;
 
       const updatedMessageIndex = prev.messages.findIndex(({ id }) => id === editMessage.id);
-      prev.messages.splice(updatedMessageIndex, 1, editMessage);
+      let _messages = cloneDeep(prev.messages)
+      _messages.splice(updatedMessageIndex, 1, editMessage);
       return {
         ...prev,
-        messages: prev.messages,
+        messages: _messages,
       };
     },
   });
