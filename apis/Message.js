@@ -151,7 +151,6 @@ export const SEND_MESSAGE = gql`
   mutation sendMessage(
     $body: String!
     $channelUrl: String!
-    $attachments: [String]
     $urlList: [String!]
     $mentions: [String!]
     $communityUrl: String!
@@ -159,7 +158,6 @@ export const SEND_MESSAGE = gql`
     sendMessage(
       body: $body
       channelUrl: $channelUrl
-      attachments: $attachments
       urlList: $urlList
       mentions: $mentions
       communityUrl: $communityUrl
@@ -167,13 +165,11 @@ export const SEND_MESSAGE = gql`
       id
       body
       createdAt
+      urlList
       author {
         id
         username
-      }
-      attachments {
-        id
-        filename
+        image
       }
     }
   }
@@ -220,10 +216,9 @@ export const REPLY_MESSAGE = gql`
   mutation replyMessage(
     $parentId: String!
     $body: String!
-    $attachments: [String]
     $urlList: [String!]
   ) {
-    replyMessage(parentId: $parentId, body: $body, attachments: $attachments, urlList: $urlList) {
+    replyMessage(parentId: $parentId, body: $body, urlList: $urlList) {
       id
       parent {
         id

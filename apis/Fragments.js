@@ -5,6 +5,7 @@ export const MessagesFragment = gql`
     id
     body
     createdAt
+    urlList
     author {
       id
       username
@@ -38,38 +39,6 @@ export const MessagesFragment = gql`
           color
         }
       }
-      attachments {
-        id
-        Key
-        filename
-        mimetype
-        filesize
-      }
-      remoteAttachments {
-        id
-        siteName
-        description
-        title
-        videoLink
-        preview
-        url
-      }
-    }
-    attachments {
-      id
-      Key
-      filename
-      mimetype
-      filesize
-    }
-    remoteAttachments {
-      id
-      siteName
-      description
-      title
-      videoLink
-      preview
-      url
     }
   }
 `;

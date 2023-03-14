@@ -1,6 +1,5 @@
 import { useState, createContext, useEffect, useCallback } from 'react';
-import { useMutation } from '@apollo/client';
-import { UPLOAD_FILE } from 'apis/File';
+import { v4 as uuid } from 'uuid';
 
 const UploadManagerContext = createContext({
   uploadQueue: [],
@@ -11,7 +10,6 @@ UploadManagerContext.displayName = 'UploadManager';
 const UploadManagerProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [uploadQueue, setUploadQueue] = useState([]);
-  const [uploadFile] = useMutation(UPLOAD_FILE);
 
   const [maxSteps, setMaxStep] = useState(0);
   const [sendMessageStatus, setSendMessageStatus] = useState({
@@ -19,7 +17,7 @@ const UploadManagerProvider = ({ children }) => {
     step: 0,
   });
 
-  useEffect(() => {
+  const upload = async () => {
     const nextUpload = uploadQueue[0];
     if (nextUpload && !loading) {
       setLoading(true);
@@ -27,27 +25,40 @@ const UploadManagerProvider = ({ children }) => {
       setSendMessageStatus({ label: 'Message processing', step: 1 });
 
       const uploadList = nextUpload.data.attachments.map(async file => {
-        const {
-          data: {
-            uploadFile: { Key },
-          },
-        } = await uploadFile({ variables: { file } });
+        const url = `http://localhost:4000/presign`;
+        const filename = uuid().slice(0,8) + file.name;
+        const params = new URLSearchParams({
+          key: filename,
+        });
+        let resp = await fetch(url, {
+          method: "POST",
+          body: params,
+        });
+        let presignResp = await resp.json();
 
-        if (Key) {
+        resp = await fetch(presignResp.url, {
+          method: "PUT",
+          headers: {
+            "Content-Type": file.type,
+          },
+          body: file,
+        });
+
+        if (filename) {
           setSendMessageStatus(({ step }) => ({
             label: `${step - 2} / ${nextUpload.data.attachments.length}`,
             step: step + 1,
           }));
         }
 
-        return Key;
+        return filename;
       });
 
       setSendMessageStatus({ label: 'File uploading', step: 2 });
 
       const sendMessage = async () => {
         const filesUrlList = await Promise.all(uploadList);
-
+        console.log(filesUrlList, '==filesUrlList==')
         setSendMessageStatus(({ step }) => ({
           label: 'Message sending',
           step: step + 1,
@@ -70,6 +81,9 @@ const UploadManagerProvider = ({ children }) => {
 
       sendMessage();
     }
+  }
+  useEffect(() => {
+    upload()
   }, [uploadQueue.length, loading]);
 
   const addUploadToQueue = useCallback(uploadItem => {
