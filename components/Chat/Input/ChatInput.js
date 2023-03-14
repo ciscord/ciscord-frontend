@@ -19,12 +19,10 @@ const ChatInput = ({ dropzoneItems }) => {
     channelUrl,
     communityUrl,
     mentions,
-    attachments,
     urlList,
   }) => {
     const message = {
       body,
-      attachments,
       channelUrl: `${communityUrl}/${channelUrl}`,
       urlList,
       mentions: mentions ? mentions.map(e => e.id) : [],
@@ -41,7 +39,6 @@ const ChatInput = ({ dropzoneItems }) => {
           id: cuid(),
           createdAt: new Date(),
           updatedAt: new Date(),
-          attachments: [],
           remoteAttachments: [],
           children: [],
           reactions: [],

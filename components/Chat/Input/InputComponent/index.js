@@ -96,7 +96,8 @@ const InputComponent = ({
       });
     } else {
       setStatus('SEND_MESSAGE');
-      const urlList = checkUrlAttachments(body);
+      // const urlList = checkUrlAttachments(body);
+      const urlList = []
       if (attachments.length) {
         // eslint-disable-next-line
         process.browser && document.getElementById('sound-message').play();
@@ -110,8 +111,7 @@ const InputComponent = ({
               channelUrl,
               communityUrl,
               mentions,
-              attachments: fileList,
-              urlList,
+              urlList: fileList || [],
             });
           },
         });

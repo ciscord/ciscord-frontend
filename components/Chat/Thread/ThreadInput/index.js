@@ -11,11 +11,10 @@ const ThreadChat = ({ messageId, dropzoneItems, eraseAttachments }) => {
     query: { community: communityUrl, channel: channelUrl },
   } = useRouter();
 
-  const handleMessage = async ({ body, attachments, mentions, urlList }) => {
+  const handleMessage = async ({ body, mentions, urlList }) => {
     const message = {
       body,
       parentId: messageId,
-      attachments,
       urlList,
     };
 
