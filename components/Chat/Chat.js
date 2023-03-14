@@ -68,8 +68,8 @@ const Chat = () => {
   const unreadMessagesCount = () => {
     if (user && channelInfo) {
       return messages.filter(
-        ({ createdAt, author: { id } }) =>
-          id !== user.id &&
+        ({ createdAt, author }) =>
+          author?.id !== user.id &&
           new Date(createdAt).getTime() > new Date(channelInfo.lastUpdateAt).getTime()
       ).length;
     }
@@ -185,21 +185,21 @@ const Chat = () => {
               setLastMessageReached(true);
               return prev;
             }
-  
+
             const mergedMessages = [].concat(prev.messages, fetchMoreResult.messages);
             return { ...prev, messages: mergedMessages };
           },
         });
-  
+
         return result.data.messages;
       }
-      
+
     } catch (error) {
       console.log(error)
     } finally {
       return [];
     }
-    
+
   };
 
   const fetchMessagesById = async id => {
