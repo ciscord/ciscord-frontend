@@ -105,32 +105,32 @@ const ThreadRightBar = ({ message, onClose, onCopyLink, scrollMessageId }) => {
               </S.ReplyNumber>
               */}
               <S.MessageList>
-                {message.children.map((children, index, list) => {
-                  const isDirectLink = scrollMessageId === children.id;
+                {message.children.map((child, index, list) => {
+                  const isDirectLink = scrollMessageId === child.id;
                   const previousMessage = list[index - 1];
                   const isChild =
-                    previousMessage && previousMessage.author.username === message.author.username;
+                    !!previousMessage && previousMessage.author.username === child.author.username;
 
                   return isDirectLink ? (
                     <Message
-                      message={children}
+                      message={child}
                       className="message"
                       isThread
                       isChild={isChild}
                       onEdit={handleEdit}
-                      key={children.id}
+                      key={child.id}
                       onCopyLink={handleCopyLink}
                       isDirectLink={isDirectLink}
                       ref={scrollMessage}
                     />
                   ) : (
                     <Message
-                      message={children}
+                      message={child}
                       className="message"
                       isThread
                       isChild={isChild}
                       onEdit={handleEdit}
-                      key={children.id}
+                      key={child.id}
                       onCopyLink={handleCopyLink}
                     />
                   );

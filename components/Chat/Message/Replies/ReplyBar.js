@@ -10,12 +10,11 @@ const ReplyBar = ({ reply, onClick }) => {
     () => [...new Set(authorIdList)].map(uniqueId => authorList.find(({ id }) => uniqueId === id)),
     [authorIdList]
   );
-
   return (
     <S.ReplyBlock onClick={onClick}>
       <S.ReplyAvatars>
         {getUniqueAuthorList().map(({ image, username, id }) => (
-          <S.ReplyAvatarItem src={`https://ui-avatars.com/api/?name=${username}`} name={username} key={id} />
+          <S.ReplyAvatarItem src={image} name={username} key={id} />
         ))}
       </S.ReplyAvatars>
       <S.ReplyNumber>{`${reply.length} messages`}</S.ReplyNumber>
