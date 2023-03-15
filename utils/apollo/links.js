@@ -5,7 +5,6 @@ import { createUploadLink }from 'apollo-upload-client';
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
 import { createClient } from 'graphql-ws';
 import fetch from 'isomorphic-unfetch';
-import Cookies from 'js-cookie';
 import { getMainDefinition } from '@apollo/client/utilities';
 import { COMPANY_NAME } from 'utils/config';
 
@@ -24,7 +23,7 @@ export const wsLink = process.browser
   : () => console.log('SSR');
 
 export const request = async operation => {
-  const token = await Cookies.get('token');
+  const token = sessionStorage.getItem('token')
   operation.setContext({
     headers: {
       authorization: token ? `Bearer ${token}` : '',
