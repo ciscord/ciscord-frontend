@@ -19,7 +19,7 @@ const UserProvider = ({ children }) => {
   const [fetchMe, { data: { me, loading } = {} }] = useLazyQuery(GET_ME, {
     fetchPolicy: 'network-only',
     onCompleted: () => {
-      sessionStorage.setItem('tenant', COMPANY_NAME());
+      localStorage.setItem('tenant', COMPANY_NAME());
       setUser(me);
       Router.push(`/[company]/[community]/[channel]`, `/${COMPANY_NAME()}/general/general`, {
         shallow: true,
@@ -34,7 +34,7 @@ const UserProvider = ({ children }) => {
   const [fetchOnly, { data: { me: me1 } = {} }] = useLazyQuery(GET_ME, {
     fetchPolicy: 'network-only',
     onCompleted: () => {
-      sessionStorage.setItem('tenant', COMPANY_NAME());
+      localStorage.setItem('tenant', COMPANY_NAME());
       setUser(me1);
       if (!userLoaded) {
         setUserLoaded(true);
@@ -52,8 +52,8 @@ const UserProvider = ({ children }) => {
     Cookies.remove('token');
     setUser(null);
     if (window) {
-      window.sessionStorage.setItem('logout', Date.now());
-      sessionStorage.removeItem('user');
+      window.localStorage.setItem('logout', Date.now());
+      localStorage.removeItem('user');
     }
   };
 
@@ -74,14 +74,14 @@ const UserProvider = ({ children }) => {
 
   useEffect(() => {
     if (user === null) {
-      const localState = JSON.parse(sessionStorage.getItem('user'));
+      const localState = JSON.parse(localStorage.getItem('user'));
       if (localState) {
         setUser(localState);
       }
-    } else if (sessionStorage.getItem('tenant') !== COMPANY_NAME()) {
+    } else if (localStorage.getItem('tenant') !== COMPANY_NAME()) {
       logout();
     } else {
-      sessionStorage.setItem('user', JSON.stringify(user));
+      localStorage.setItem('user', JSON.stringify(user));
     }
   }, [user]);
 

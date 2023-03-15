@@ -8,6 +8,7 @@ export default createGlobalStyle`
 
   body {
     font-family: 'Helvetica Neue' !important;
+    color: black;
   }
 
   button {
