@@ -18,8 +18,8 @@ const initialValues = {
   email: '',
   password: '',
 };
-const BACKEND_URL = 'http://localhost:4000';
-const FRONTEND_URL = 'http://localhost:3000';
+const BACKEND_URL = 'http://54.147.200.132:4000';
+const FRONTEND_URL = 'http://54.147.200.132:3000';
 
 const SignUp = () => {
   const { signin } = useContext(UserContext);

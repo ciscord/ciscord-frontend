@@ -9,8 +9,8 @@ import Cookies from 'js-cookie';
 import { getMainDefinition } from '@apollo/client/utilities';
 import { COMPANY_NAME } from 'utils/config';
 
-const uri = `http://localhost:4000/graphql`;
-const wsUri = `ws://localhost:4000/graphql`;
+const uri = `http://54.147.200.132:4000/graphql`;
+const wsUri = `ws://54.147.200.132:4000/graphql`;
 console.log(uri, 'uri');
 console.log(wsUri, 'wsUri');
 export const httpLink = new HttpLink({
