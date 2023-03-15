@@ -66,24 +66,31 @@ const CreateCommunity = () => {
   };
 
   const onSubmit = async (values, { setSubmitting, setErrors }) => {
-    let image = 'http://ec2-3-20-204-242.us-east-2.compute.amazonaws.com:3000/favicon.svg';
 
-    const url = values.name.toLowerCase().replace(' ', '-');
+    const url = `https://54.147.200.132/graphql/presign`;
+    const filename = uuid().slice(0, 8) + communityImage.name;
+    const params = new URLSearchParams({
+      key: filename,
+    });
+    let resp = await fetch(url, {
+      method: "POST",
+      body: params,
+    });
+    let presignResp = await resp.json();
 
-    if (communityImage) {
-      const {
-        data: {
-          uploadFile: { Key },
-        },
-      } = await uploadFile({ variables: { file: communityImage } });
-      image = `${awsUrl}${Key}`;
-    }
+    resp = await fetch(presignResp.url, {
+      method: "PUT",
+      headers: {
+        "Content-Type": communityImage.type,
+      },
+      body: communityImage,
+    });
 
     const { data } = await createCommunity({
       variables: {
         ...values,
         url,
-        image,
+        image: `https://shantsai.s3.amazonaws.com/${filename}`,
       },
       errorPolicy: 'all',
     });

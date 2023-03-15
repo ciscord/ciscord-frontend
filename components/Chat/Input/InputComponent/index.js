@@ -78,13 +78,6 @@ const InputComponent = ({
     }
   };
 
-  const checkUrlAttachments = messageBody => {
-    const urlRegex = /(https?:\/\/[^\s]+)/g;
-    const urlList = messageBody.match(urlRegex);
-
-    return urlList;
-  };
-
   useEffect(() => {
     if (dropzoneItems) handleFileAdd(dropzoneItems);
   }, [dropzoneItems]);
@@ -96,7 +89,6 @@ const InputComponent = ({
       });
     } else {
       setStatus('SEND_MESSAGE');
-      // const urlList = checkUrlAttachments(body);
       const urlList = []
       if (attachments.length) {
         // eslint-disable-next-line
