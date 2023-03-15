@@ -103,7 +103,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "PqLY");
+/******/ 	return __webpack_require__(__webpack_require__.s = "7YRu");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -5579,8 +5579,8 @@ var config = __webpack_require__("00EI");
 
 
 
-const uri = `http://54.147.200.132:4000/graphql`;
-const wsUri = `ws://54.147.200.132:4000/graphql`;
+const uri = `https://54.147.200.132/graphql`;
+const wsUri = `wss://54.147.200.132/graphql`;
 console.log(uri, 'uri');
 console.log(wsUri, 'wsUri');
 const httpLink = new main["HttpLink"]({
@@ -14514,6 +14514,230 @@ exports.makeVar = makeVar;
 /***/ (function(module, exports) {
 
 module.exports = require("https");
+
+/***/ }),
+
+/***/ "7YRu":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+
+    
+    
+    
+    const runtimeConfig = {}
+    const {parse} = __webpack_require__("bzos")
+    const {parse: parseQs} = __webpack_require__("8xkj")
+    const {renderToHTML} =__webpack_require__("/bjS");
+    const {sendHTML} = __webpack_require__("LuNM");
+    const buildManifest = __webpack_require__("LZ9C");
+    const reactLoadableManifest = __webpack_require__("67Bq");
+    const Document = __webpack_require__("5w0S").default;
+    const Error = __webpack_require__("Y0NT").default;
+    const App = __webpack_require__("1TCz").default;
+    
+    const { getRouteMatcher } = __webpack_require__("gguc");
+      const { getRouteRegex } = __webpack_require__("YTqd");
+  
+    
+    const { rewrites } = __webpack_require__("Skye")
+    const { pathToRegexp, default: pathMatch } = __webpack_require__("uDRR")
+  
+
+    const ComponentInfo = __webpack_require__("oT7w")
+
+    const Component = ComponentInfo.default
+    /* harmony default export */ __webpack_exports__["default"] = (Component);
+    const unstable_getStaticProps = ComponentInfo['unstable_getStaticProp' + 's']
+    const unstable_getStaticParams = ComponentInfo['unstable_getStaticParam' + 's']
+    const unstable_getStaticPaths = ComponentInfo['unstable_getStaticPath' + 's']
+    const unstable_getServerProps = ComponentInfo['unstable_getServerProp' + 's']
+
+    
+    const dynamicRouteMatcher = getRouteMatcher(getRouteRegex("/[company]/signup"))
+  
+    
+    const getCustomRouteMatcher = pathMatch(true)
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of rewrites) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          parsedUrl.query = {
+            ...parsedUrl.query,
+            ...params
+          }
+          const parsedDest = parse(rewrite.destination)
+          const destCompiler = pathToRegexp.compile(
+            `${parsedDest.pathname}${parsedDest.hash || ''}`
+          )
+          const newUrl = destCompiler(params)
+          const parsedNewUrl = parse(newUrl)
+
+          parsedUrl.pathname = parsedNewUrl.pathname
+          parsedUrl.hash = parsedNewUrl.hash
+
+          if (parsedUrl.pathname === '/[company]/signup'){
+            break
+          }
+          
+            const dynamicParams = dynamicRouteMatcher(parsedUrl.pathname);            if (dynamicParams) {
+              parsedUrl.query = {
+                ...parsedUrl.query,
+                ...dynamicParams
+              }
+              break
+            }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+    const config = ComponentInfo['confi' + 'g'] || {}
+    const _app = App
+    async function renderReqToHTML(req, res, fromExport, _renderOpts, _params) {
+      
+      const options = {
+        App,
+        Document,
+        buildManifest,
+        unstable_getStaticProps,
+        unstable_getServerProps,
+        unstable_getStaticPaths,
+        reactLoadableManifest,
+        canonicalBase: "",
+        buildId: "sR8E943MeF8iizUTiMw93",
+        assetPrefix: "",
+        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
+        previewProps: {previewModeId:"609caa2c08a401c5bf32f3fc25af9097",previewModeSigningKey:"0da947cb1a9ab1a2963270563d98b07ecb5bf49046618b8cf90b3d074a7f8610",previewModeEncryptionKey:"da2b641ab67e6721fc50a478a49cbc3b4900768642bbad9e97222d934aa6a207"},
+        ..._renderOpts
+      }
+      let _nextData = false
+
+      const parsedUrl = handleRewrites(parse(req.url, true))
+
+      if (parsedUrl.pathname.match(/_next\/data/)) {
+        _nextData = true
+        parsedUrl.pathname = parsedUrl.pathname
+          .replace(new RegExp('/_next/data/sR8E943MeF8iizUTiMw93/'), '/')
+          .replace(/\.json$/, '')
+      }
+
+      const renderOpts = Object.assign(
+        {
+          Component,
+          pageConfig: config,
+          nextExport: fromExport
+        },
+        options,
+      )
+      try {
+        
+        const params = fromExport && !unstable_getStaticProps && !unstable_getServerProps ? {} : dynamicRouteMatcher(parsedUrl.pathname) || {};
+        const nowParams = req.headers && req.headers["x-now-route-matches"]
+              ? getRouteMatcher(
+                  (function() {
+                    const { re, groups } = getRouteRegex("/[company]/signup");
+                    return {
+                      re: {
+                        // Simulate a RegExp match from the `req.url` input
+                        exec: str => {
+                          const obj = parseQs(str);
+                          return Object.keys(obj).reduce(
+                            (prev, key) =>
+                              Object.assign(prev, {
+                                [key]: encodeURIComponent(obj[key])
+                              }),
+                            {}
+                          );
+                        }
+                      },
+                      groups
+                    };
+                  })()
+                )(req.headers["x-now-route-matches"])
+              : null;
+          
+        // make sure to set renderOpts to the correct params e.g. _params
+        // if provided from worker or params if we're parsing them here
+        renderOpts.params = _params || params
+
+        const isFallback = parsedUrl.query.__nextFallback
+
+        let result = await renderToHTML(req, res, "/[company]/signup", Object.assign({}, unstable_getStaticProps ? {} : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
+
+        if (_nextData && !fromExport) {
+          const payload = JSON.stringify(renderOpts.pageData)
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Content-Length', Buffer.byteLength(payload))
+
+          res.setHeader(
+            'Cache-Control',
+            unstable_getServerProps
+              ? `no-cache, no-store, must-revalidate`
+              : `s-maxage=${renderOpts.revalidate}, stale-while-revalidate`
+          )
+          res.end(payload)
+          return null
+        }
+
+        if (fromExport) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+          const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+            unstable_getStaticProps: undefined,
+            unstable_getStaticPaths: undefined,
+            unstable_getServerProps: undefined,
+            Component: Error
+          }))
+          return result
+        } else {
+          console.error(err)
+          res.statusCode = 500
+          const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+            unstable_getStaticProps: undefined,
+            unstable_getStaticPaths: undefined,
+            unstable_getServerProps: undefined,
+            Component: Error,
+            err
+          }))
+          return result
+        }
+      }
+    }
+    async function render (req, res) {
+      try {
+        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
+        const html = await renderReqToHTML(req, res)
+        if (html) {
+          sendHTML(req, res, html, {generateEtags: true})
+        }
+      } catch(err) {
+        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
+        console.error(err)
+        res.statusCode = 500
+        res.end('Internal Server Error')
+      }
+    }
+  
 
 /***/ }),
 
@@ -36223,7 +36447,7 @@ exports.versionInfo = versionInfo;
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"devFiles\":[],\"pages\":{\"/\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/[community]/[channel]\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/7479380b.9198308deed5bafe842a.js\",\"static/chunks/29107295.625fc49211c30979cf8e.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/chunks/5a8cd65082aacfd1425ae78262e4160881c87e87.f68996f06eb48a3ede34.js\",\"static/chunks/e704a8556894960a15cb3a49fa8ef129e5990827.e895e6a57dd30e682b66.js\",\"static/chunks/c92c64085066b68c823627dd3eab7239f29d2975.7148396413c9a9201a69.js\",\"static/css/styles.0d3b3ad7.chunk.css\",\"static/chunks/styles.0192738a3a9b32cb4109.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/[community]/new-channel\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/chunks/e6b586b1ccd3bd3bb1d09403c10336642558c4ba.cb53612a5a929ba6470f.js\",\"static/chunks/e704a8556894960a15cb3a49fa8ef129e5990827.e895e6a57dd30e682b66.js\",\"static/chunks/8f6b4bb8bc676fa34505d3c07ed39e3dc8cb5ddc.512697f7c3698ed7e4cf.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/communities\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/communities/new\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/chunks/e6b586b1ccd3bd3bb1d09403c10336642558c4ba.cb53612a5a929ba6470f.js\",\"static/chunks/5a8cd65082aacfd1425ae78262e4160881c87e87.f68996f06eb48a3ede34.js\",\"static/chunks/8f6b4bb8bc676fa34505d3c07ed39e3dc8cb5ddc.512697f7c3698ed7e4cf.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/direct\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/5a8cd65082aacfd1425ae78262e4160881c87e87.f68996f06eb48a3ede34.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/login\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/e6b586b1ccd3bd3bb1d09403c10336642558c4ba.cb53612a5a929ba6470f.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/settings/members\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/settings/profile\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/settings/roles\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/chunks/e6b586b1ccd3bd3bb1d09403c10336642558c4ba.cb53612a5a929ba6470f.js\",\"static/chunks/e704a8556894960a15cb3a49fa8ef129e5990827.e895e6a57dd30e682b66.js\",\"static/chunks/125ebedb8b606a25373e4e3fc19c77b2cfee38f5.76ddbaddab594a995b42.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/settings/roles/new\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/chunks/e6b586b1ccd3bd3bb1d09403c10336642558c4ba.cb53612a5a929ba6470f.js\",\"static/chunks/e704a8556894960a15cb3a49fa8ef129e5990827.e895e6a57dd30e682b66.js\",\"static/chunks/125ebedb8b606a25373e4e3fc19c77b2cfee38f5.76ddbaddab594a995b42.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/[company]/signup\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/e6b586b1ccd3bd3bb1d09403c10336642558c4ba.cb53612a5a929ba6470f.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/_app\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1429482f0c8d12f576fd2163210acf94e30e7473.116cb095c722d5c06401.js\",\"static/chunks/a075bf310653cc89b4f0f8f878d719b225c38819.9fa2b61089198f384734.js\",\"static/chunks/6f501b1a4f6343ff290c5a7268baefdd9a76d535.71e90a65613ae73c1ba3.js\",\"static/chunks/e3e50a1ee0a92f078e026311fcb8cbe3e5c56512.ed07feda4de595162941.js\",\"static/chunks/cf8f4976636724d8408503256600612bcd5cf33c.f75e9fe11e9f84183e01.js\",\"static/chunks/5a8cd65082aacfd1425ae78262e4160881c87e87.f68996f06eb48a3ede34.js\",\"static/chunks/c92c64085066b68c823627dd3eab7239f29d2975.7148396413c9a9201a69.js\",\"static/css/styles.0d3b3ad7.chunk.css\",\"static/chunks/styles.0192738a3a9b32cb4109.js\",\"static/runtime/main-ed375ef79b58de561634.js\",\"static/oRBCArw5gNMUiYuqSXMwW/_buildManifest.js\"],\"/_error\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/runtime/main-ed375ef79b58de561634.js\"],\"/_polyfills\":[\"static/runtime/polyfills-761db623df52db98ae55.js\"],\"/index\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/runtime/main-ed375ef79b58de561634.js\"]}}");
+module.exports = JSON.parse("{\"devFiles\":[],\"pages\":{\"/\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/[community]/[channel]\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/7479380b.9198308deed5bafe842a.js\",\"static/chunks/29107295.625fc49211c30979cf8e.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/chunks/34991b4069b2380d957489f6bf710aba9c2afe9d.f68996f06eb48a3ede34.js\",\"static/chunks/c3b4da37e68ca0d928780d20e1966a2e5dfc4b43.e895e6a57dd30e682b66.js\",\"static/chunks/85172f03fc09181b51b96357a1bf0fcdd511e446.7148396413c9a9201a69.js\",\"static/css/styles.0d3b3ad7.chunk.css\",\"static/chunks/styles.0192738a3a9b32cb4109.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/[community]/new-channel\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/chunks/989c6e10bb9e19041b88bf423df1884ef715e4e2.cb53612a5a929ba6470f.js\",\"static/chunks/c3b4da37e68ca0d928780d20e1966a2e5dfc4b43.e895e6a57dd30e682b66.js\",\"static/chunks/3edd7866154ca76c70df500c12232355ea09b94e.0f106f4e10b89802c8d0.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/communities\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/communities/new\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/chunks/989c6e10bb9e19041b88bf423df1884ef715e4e2.cb53612a5a929ba6470f.js\",\"static/chunks/34991b4069b2380d957489f6bf710aba9c2afe9d.f68996f06eb48a3ede34.js\",\"static/chunks/3edd7866154ca76c70df500c12232355ea09b94e.0f106f4e10b89802c8d0.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/direct\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/34991b4069b2380d957489f6bf710aba9c2afe9d.f68996f06eb48a3ede34.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/login\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/989c6e10bb9e19041b88bf423df1884ef715e4e2.cb53612a5a929ba6470f.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/settings/members\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/settings/profile\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/settings/roles\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/chunks/989c6e10bb9e19041b88bf423df1884ef715e4e2.cb53612a5a929ba6470f.js\",\"static/chunks/c3b4da37e68ca0d928780d20e1966a2e5dfc4b43.e895e6a57dd30e682b66.js\",\"static/chunks/42de8a490eb55440a8ef0eee5fe006517e9772c6.6c4bbfe4fdd42d18bc58.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/settings/roles/new\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/chunks/989c6e10bb9e19041b88bf423df1884ef715e4e2.cb53612a5a929ba6470f.js\",\"static/chunks/c3b4da37e68ca0d928780d20e1966a2e5dfc4b43.e895e6a57dd30e682b66.js\",\"static/chunks/42de8a490eb55440a8ef0eee5fe006517e9772c6.6c4bbfe4fdd42d18bc58.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/[company]/signup\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/989c6e10bb9e19041b88bf423df1884ef715e4e2.cb53612a5a929ba6470f.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/_app\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/chunks/1298adaf1b8d0bcd26268baade9d41dca0384884.116cb095c722d5c06401.js\",\"static/chunks/4818e9cb53103688fc8d0e3a6307aa8a2e291d56.9fa2b61089198f384734.js\",\"static/chunks/6ff603c80616ee6e89a3454d5a07f1c0cc650e27.71e90a65613ae73c1ba3.js\",\"static/chunks/31d48a4b931624e4cbf73ca3766e334c5b663bd2.ed07feda4de595162941.js\",\"static/chunks/d3cd04151c0b94e064df6fd4b48eec00a087606e.f75e9fe11e9f84183e01.js\",\"static/chunks/34991b4069b2380d957489f6bf710aba9c2afe9d.f68996f06eb48a3ede34.js\",\"static/chunks/85172f03fc09181b51b96357a1bf0fcdd511e446.7148396413c9a9201a69.js\",\"static/css/styles.0d3b3ad7.chunk.css\",\"static/chunks/styles.0192738a3a9b32cb4109.js\",\"static/runtime/main-a02176890ba43317bdcf.js\",\"static/sR8E943MeF8iizUTiMw93/_buildManifest.js\"],\"/_error\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"],\"/_polyfills\":[\"static/runtime/polyfills-ad0e4cab2127d7338bbc.js\"],\"/index\":[\"static/runtime/webpack-87e8411b4345ec23ecce.js\",\"static/chunks/framework.c708b740b329571b6f43.js\",\"static/chunks/commons.620b5b3989bb74b7f82e.js\",\"static/runtime/main-a02176890ba43317bdcf.js\"]}}");
 
 /***/ }),
 
@@ -43111,230 +43335,6 @@ function ScalarLeafs(context) {
 
 })));
 
-
-/***/ }),
-
-/***/ "PqLY":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getServerProps", function() { return unstable_getServerProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return _app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-
-    
-    
-    
-    const runtimeConfig = {}
-    const {parse} = __webpack_require__("bzos")
-    const {parse: parseQs} = __webpack_require__("8xkj")
-    const {renderToHTML} =__webpack_require__("/bjS");
-    const {sendHTML} = __webpack_require__("LuNM");
-    const buildManifest = __webpack_require__("LZ9C");
-    const reactLoadableManifest = __webpack_require__("67Bq");
-    const Document = __webpack_require__("5w0S").default;
-    const Error = __webpack_require__("Y0NT").default;
-    const App = __webpack_require__("1TCz").default;
-    
-    const { getRouteMatcher } = __webpack_require__("gguc");
-      const { getRouteRegex } = __webpack_require__("YTqd");
-  
-    
-    const { rewrites } = __webpack_require__("Skye")
-    const { pathToRegexp, default: pathMatch } = __webpack_require__("uDRR")
-  
-
-    const ComponentInfo = __webpack_require__("oT7w")
-
-    const Component = ComponentInfo.default
-    /* harmony default export */ __webpack_exports__["default"] = (Component);
-    const unstable_getStaticProps = ComponentInfo['unstable_getStaticProp' + 's']
-    const unstable_getStaticParams = ComponentInfo['unstable_getStaticParam' + 's']
-    const unstable_getStaticPaths = ComponentInfo['unstable_getStaticPath' + 's']
-    const unstable_getServerProps = ComponentInfo['unstable_getServerProp' + 's']
-
-    
-    const dynamicRouteMatcher = getRouteMatcher(getRouteRegex("/[company]/signup"))
-  
-    
-    const getCustomRouteMatcher = pathMatch(true)
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of rewrites) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          parsedUrl.query = {
-            ...parsedUrl.query,
-            ...params
-          }
-          const parsedDest = parse(rewrite.destination)
-          const destCompiler = pathToRegexp.compile(
-            `${parsedDest.pathname}${parsedDest.hash || ''}`
-          )
-          const newUrl = destCompiler(params)
-          const parsedNewUrl = parse(newUrl)
-
-          parsedUrl.pathname = parsedNewUrl.pathname
-          parsedUrl.hash = parsedNewUrl.hash
-
-          if (parsedUrl.pathname === '/[company]/signup'){
-            break
-          }
-          
-            const dynamicParams = dynamicRouteMatcher(parsedUrl.pathname);            if (dynamicParams) {
-              parsedUrl.query = {
-                ...parsedUrl.query,
-                ...dynamicParams
-              }
-              break
-            }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-    const config = ComponentInfo['confi' + 'g'] || {}
-    const _app = App
-    async function renderReqToHTML(req, res, fromExport, _renderOpts, _params) {
-      
-      const options = {
-        App,
-        Document,
-        buildManifest,
-        unstable_getStaticProps,
-        unstable_getServerProps,
-        unstable_getStaticPaths,
-        reactLoadableManifest,
-        canonicalBase: "",
-        buildId: "oRBCArw5gNMUiYuqSXMwW",
-        assetPrefix: "",
-        runtimeConfig: runtimeConfig.publicRuntimeConfig || {},
-        previewProps: {previewModeId:"d3e45c8a076c4a5ba7e70b2326a0a41b",previewModeSigningKey:"a07ac1b53527f87e4040c6ca861c3e6c884a10207e4cca0345e699f1f7d7ed6d",previewModeEncryptionKey:"54dd4e49506f3211336f452eeff7b678c55504c69fe2707a9991ec214a747f57"},
-        ..._renderOpts
-      }
-      let _nextData = false
-
-      const parsedUrl = handleRewrites(parse(req.url, true))
-
-      if (parsedUrl.pathname.match(/_next\/data/)) {
-        _nextData = true
-        parsedUrl.pathname = parsedUrl.pathname
-          .replace(new RegExp('/_next/data/oRBCArw5gNMUiYuqSXMwW/'), '/')
-          .replace(/\.json$/, '')
-      }
-
-      const renderOpts = Object.assign(
-        {
-          Component,
-          pageConfig: config,
-          nextExport: fromExport
-        },
-        options,
-      )
-      try {
-        
-        const params = fromExport && !unstable_getStaticProps && !unstable_getServerProps ? {} : dynamicRouteMatcher(parsedUrl.pathname) || {};
-        const nowParams = req.headers && req.headers["x-now-route-matches"]
-              ? getRouteMatcher(
-                  (function() {
-                    const { re, groups } = getRouteRegex("/[company]/signup");
-                    return {
-                      re: {
-                        // Simulate a RegExp match from the `req.url` input
-                        exec: str => {
-                          const obj = parseQs(str);
-                          return Object.keys(obj).reduce(
-                            (prev, key) =>
-                              Object.assign(prev, {
-                                [key]: encodeURIComponent(obj[key])
-                              }),
-                            {}
-                          );
-                        }
-                      },
-                      groups
-                    };
-                  })()
-                )(req.headers["x-now-route-matches"])
-              : null;
-          
-        // make sure to set renderOpts to the correct params e.g. _params
-        // if provided from worker or params if we're parsing them here
-        renderOpts.params = _params || params
-
-        const isFallback = parsedUrl.query.__nextFallback
-
-        let result = await renderToHTML(req, res, "/[company]/signup", Object.assign({}, unstable_getStaticProps ? {} : parsedUrl.query, nowParams ? nowParams : params, _params, isFallback ? { __nextFallback: 'true' } : {}), renderOpts)
-
-        if (_nextData && !fromExport) {
-          const payload = JSON.stringify(renderOpts.pageData)
-          res.setHeader('Content-Type', 'application/json')
-          res.setHeader('Content-Length', Buffer.byteLength(payload))
-
-          res.setHeader(
-            'Cache-Control',
-            unstable_getServerProps
-              ? `no-cache, no-store, must-revalidate`
-              : `s-maxage=${renderOpts.revalidate}, stale-while-revalidate`
-          )
-          res.end(payload)
-          return null
-        }
-
-        if (fromExport) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-          const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-            unstable_getStaticProps: undefined,
-            unstable_getStaticPaths: undefined,
-            unstable_getServerProps: undefined,
-            Component: Error
-          }))
-          return result
-        } else {
-          console.error(err)
-          res.statusCode = 500
-          const result = await renderToHTML(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-            unstable_getStaticProps: undefined,
-            unstable_getStaticPaths: undefined,
-            unstable_getServerProps: undefined,
-            Component: Error,
-            err
-          }))
-          return result
-        }
-      }
-    }
-    async function render (req, res) {
-      try {
-        await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"])()
-        const html = await renderReqToHTML(req, res)
-        if (html) {
-          sendHTML(req, res, html, {generateEtags: true})
-        }
-      } catch(err) {
-        await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"])(err)
-        console.error(err)
-        res.statusCode = 500
-        res.end('Internal Server Error')
-      }
-    }
-  
 
 /***/ }),
 
