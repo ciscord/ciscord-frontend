@@ -1,0 +1,108 @@
+{
+  "./TypingStatus/TypingStatus": [
+    {
+      "id": "2DVT",
+      "name": "./components/Chat/Input/TypingStatus/TypingStatus.js",
+      "file": "static/chunks/34.359d37a7de69c32b84f8.js",
+      "publicPath": "static/chunks/34.359d37a7de69c32b84f8.js"
+    }
+  ],
+  "@apollo/client/react/ssr": [
+    {
+      "id": "+wdc",
+      "name": "./node_modules/scheduler/cjs/scheduler.production.min.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "16Al",
+      "name": "./node_modules/prop-types/factoryWithThrowingShims.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "17x9",
+      "name": "./node_modules/prop-types/index.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "8L3h",
+      "name": "./node_modules/use-subscription/index.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "IDhZ",
+      "name": "./node_modules/react-dom/cjs/react-dom-server.browser.production.min.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "JhMR",
+      "name": "./node_modules/react-dom/node_modules/scheduler/index.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "KAy6",
+      "name": "./node_modules/react-dom/server.browser.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "KqkS",
+      "name": "./node_modules/react-dom/node_modules/scheduler/cjs/scheduler.production.min.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "QCnb",
+      "name": "./node_modules/scheduler/index.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "WbBG",
+      "name": "./node_modules/prop-types/lib/ReactPropTypesSecret.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "f/k9",
+      "name": "./node_modules/use-subscription/cjs/use-subscription.production.min.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "i8i4",
+      "name": "./node_modules/react-dom/index.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "q1tI",
+      "name": "./node_modules/react/index.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "viRO",
+      "name": "./node_modules/react/cjs/react.production.min.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "yl30",
+      "name": "./node_modules/react-dom/cjs/react-dom.production.min.js",
+      "file": "static/chunks/framework.c708b740b329571b6f43.js",
+      "publicPath": "static/chunks/framework.c708b740b329571b6f43.js"
+    },
+    {
+      "id": "ShjV",
+      "name": "./node_modules/@apollo/client/react/ssr/index.js",
+      "file": "static/chunks/33.2124185323775200a40b.js",
+      "publicPath": "static/chunks/33.2124185323775200a40b.js"
+    }
+  ]
+}

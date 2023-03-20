@@ -1,0 +1,1 @@
+{"ast":null,"code":"import Popup from './Popup';\nexport default Popup;","map":{"version":3,"names":["Popup"],"sources":["/Volumes/MacData/work/ciscord-frontend.git/components/UI/Popup/index.js"],"sourcesContent":["import Popup from './Popup';\n\nexport default Popup;\n"],"mappings":"AAAA,OAAOA,KAAK,MAAM,SAAS;AAE3B,eAAeA,KAAK"},"metadata":{},"sourceType":"module"}
