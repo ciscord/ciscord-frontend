@@ -1,1 +1,0 @@
-{"ast":null,"code":"export { default } from 'components/Login/BasicLogin/Login';","map":{"version":3,"names":["default"],"sources":["/Volumes/MacData/work/ciscord-frontend.git/pages/[company]/login.js"],"sourcesContent":["export { default } from 'components/Login/BasicLogin/Login';\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,mCAAmC"},"metadata":{},"sourceType":"module"}
