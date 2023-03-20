@@ -1,1 +1,0 @@
-{"ast":null,"code":"import Flag from './Flag';\nexport default Flag;","map":{"version":3,"names":["Flag"],"sources":["/Volumes/MacData/work/ciscord-frontend.git/components/UI/Flag/index.js"],"sourcesContent":["import Flag from './Flag';\n\nexport default Flag;\n"],"mappings":"AAAA,OAAOA,IAAI,MAAM,QAAQ;AAEzB,eAAeA,IAAI"},"metadata":{},"sourceType":"module"}

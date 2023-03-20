@@ -1,1 +1,0 @@
-{"ast":null,"code":"import More from './More';\nexport default More;","map":{"version":3,"names":["More"],"sources":["/Volumes/MacData/work/ciscord-frontend.git/components/Chat/Message/Actions/More/index.js"],"sourcesContent":["import More from './More';\n\nexport default More;\n"],"mappings":"AAAA,OAAOA,IAAI,MAAM,QAAQ;AAEzB,eAAeA,IAAI"},"metadata":{},"sourceType":"module"}
