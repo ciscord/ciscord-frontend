@@ -1,1 +1,0 @@
-{"ast":null,"code":"import Loader from './Loader';\nexport default Loader;","map":{"version":3,"names":["Loader"],"sources":["/Volumes/MacData/work/ciscord-frontend.git/components/UI/Loader/index.js"],"sourcesContent":["import Loader from './Loader';\n\nexport default Loader;\n"],"mappings":"AAAA,OAAOA,MAAM,MAAM,UAAU;AAE7B,eAAeA,MAAM"},"metadata":{},"sourceType":"module"}
