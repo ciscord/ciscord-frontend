@@ -1,0 +1,1 @@
+{"ast":null,"code":"export { default } from 'components/Communities';","map":{"version":3,"names":["default"],"sources":["/Volumes/MacData/work/ciscord-frontend.git/pages/[company]/communities/index.js"],"sourcesContent":["export { default } from 'components/Communities';\n"],"mappings":"AAAA,SAASA,OAAO,QAAQ,wBAAwB"},"metadata":{},"sourceType":"module"}
