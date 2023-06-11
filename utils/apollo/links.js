@@ -8,8 +8,8 @@ import fetch from 'isomorphic-unfetch';
 import { getMainDefinition } from '@apollo/client/utilities';
 import { COMPANY_NAME } from 'utils/config';
 
-const uri = `https://54.147.200.132/graphql`;
-const wsUri = `wss://54.147.200.132/graphql`;
+const uri = `https://biznessapps.org/graphql`;
+const wsUri = `wss://biznessapps.org/graphql`;
 console.log(uri, 'uri');
 console.log(wsUri, 'wsUri');
 export const httpLink = new HttpLink({

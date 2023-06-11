@@ -67,7 +67,7 @@ const CreateCommunity = () => {
 
   const onSubmit = async (values, { setSubmitting, setErrors }) => {
 
-    const url = `https://54.147.200.132/graphql/presign`;
+    const url = `https://biznessapps.org/graphql/presign`;
     const filename = uuid().slice(0, 8) + communityImage.name;
     const params = new URLSearchParams({
       key: filename,

@@ -25,7 +25,7 @@ const UploadManagerProvider = ({ children }) => {
       setSendMessageStatus({ label: 'Message processing', step: 1 });
 
       const uploadList = nextUpload.data.attachments.map(async file => {
-        const url = `https://54.147.200.132/graphql/presign`;
+        const url = `https://biznessapps.org/graphql/presign`;
         const filename = uuid().slice(0,8) + file.name;
         const params = new URLSearchParams({
           key: filename,
