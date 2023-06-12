@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="92px" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>help-circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="help-circle" transform="translate(4.333333, 4.333333)" stroke-width="8.33333333">
+            <circle id="Oval" stroke="#FFFFFF" cx="41.6666667" cy="41.6666667" r="41.6666667"></circle>
+            <path d="M29.5416667,29.1666667 C31.5643203,23.4168518 37.4390984,19.964193 43.446568,20.9946338 C49.4540375,22.0250745 53.842414,27.2381372 53.8333474,33.3333333 C53.8333474,41.6666667 41.3333333,45.8333333 41.3333333,45.8333333" id="Path" stroke="#FFFFFF"></path>
+            <path d="M41.7388298,61.6751712 L42.2388298,61.6751712" id="Path" stroke="#FFFAFA" transform="translate(41.988830, 61.675171) rotate(10.000000) translate(-41.988830, -61.675171) "></path>
+        </g>
+    </g>
+</svg>

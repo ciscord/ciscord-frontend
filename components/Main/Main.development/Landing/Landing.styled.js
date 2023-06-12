@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import logo from 'public/logo.svg';
-import bicycle from 'public/images/landing/bicycles.png';
 
 export const Container = styled.div`
   display: flex;
@@ -31,7 +30,6 @@ export const SubHeading = styled.h3.attrs({
 `;
 
 export const Picture = styled.img.attrs({
-  src: bicycle,
   className: 'w-60',
 })`
   margin-top: -80px;

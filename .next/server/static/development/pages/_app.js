@@ -4376,7 +4376,7 @@ const UploadManagerProvider = ({
         step: 1
       });
       const uploadList = nextUpload.data.attachments.map(async file => {
-        const url = `https://54.147.200.132/graphql/presign`;
+        const url = `https://biznessapps.org/graphql/presign`;
         const filename = Object(uuid__WEBPACK_IMPORTED_MODULE_1__["v4"])().slice(0, 8) + file.name;
         const params = new URLSearchParams({
           key: filename
@@ -11994,7 +11994,7 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../next/node_modules/webpack/buildin/module.js */ "./node_modules/next/node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
@@ -15264,29 +15264,7 @@ function createUrl(router) {
 
 /***/ }),
 
-/***/ "./node_modules/react-perfect-scrollbar/dist/css/styles.css":
-/*!******************************************************************!*\
-  !*** ./node_modules/react-perfect-scrollbar/dist/css/styles.css ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/react-toastify/dist/ReactToastify.min.css":
-/*!****************************************************************!*\
-  !*** ./node_modules/react-toastify/dist/ReactToastify.min.css ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/webpack/buildin/module.js":
+/***/ "./node_modules/next/node_modules/webpack/buildin/module.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -15315,6 +15293,28 @@ module.exports = function(module) {
 	}
 	return module;
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/react-perfect-scrollbar/dist/css/styles.css":
+/*!******************************************************************!*\
+  !*** ./node_modules/react-perfect-scrollbar/dist/css/styles.css ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/react-toastify/dist/ReactToastify.min.css":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-toastify/dist/ReactToastify.min.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 
 
 /***/ }),
@@ -16528,8 +16528,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const uri = `https://54.147.200.132/graphql`;
-const wsUri = `wss://54.147.200.132/graphql`;
+const uri = `https://biznessapps.org/graphql`;
+const wsUri = `wss://biznessapps.org/graphql`;
 console.log(uri, 'uri');
 console.log(wsUri, 'wsUri');
 const httpLink = new _apollo_client__WEBPACK_IMPORTED_MODULE_0__["HttpLink"]({
