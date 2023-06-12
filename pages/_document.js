@@ -45,7 +45,8 @@ export default class MyDocument extends Document {
           <audio src="/sounds/click_muted_lo.mp3" id="sound-muted_low" />
           <audio src="/sounds/card_drop.mp3" id="widget-open" />
           <audio src="/sounds/card_deal.mp3" id="widget-close" />
-
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2521962110395134"
+     crossorigin="anonymous"></script>
           <link
             rel="stylesheet"
             type="text/css"
