@@ -2005,6 +2005,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
   }
   render() {
     return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], {
+      lang: "en-US",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -2025,7 +2026,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 34,
         columnNumber: 11
       }
-    }, "ciscord"), __jsx("meta", {
+    }, "ciscord, biznessapps"), __jsx("meta", {
       charSet: "utf-8",
       __self: this,
       __source: {
@@ -2107,6 +2108,16 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 47,
         columnNumber: 11
       }
+    }), __jsx("script", {
+      async: true,
+      src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2521962110395134",
+      crossorigin: "anonymous",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 48,
+        columnNumber: 11
+      }
     }), __jsx("link", {
       rel: "stylesheet",
       type: "text/css",
@@ -2114,7 +2125,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 11
       }
     }), __jsx("script", {
@@ -2122,28 +2133,28 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 55,
         columnNumber: 11
       }
     })), __jsx("body", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 57,
         columnNumber: 9
       }
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57,
+        lineNumber: 58,
         columnNumber: 11
       }
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58,
+        lineNumber: 59,
         columnNumber: 11
       }
     })));

@@ -14,15 +14,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Landing_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Landing.styled */ "./components/Main/Main.development/Landing/Landing.styled.js");
-/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./normalize.css */ "./components/Main/Main.development/Landing/normalize.css");
-/* harmony import */ var _normalize_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_normalize_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _index2_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index2.css */ "./components/Main/Main.development/Landing/index2.css");
-/* harmony import */ var _index2_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index2_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _index2_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index2.css */ "./components/Main/Main.development/Landing/index2.css");
+/* harmony import */ var _index2_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index2_css__WEBPACK_IMPORTED_MODULE_3__);
 var _this = undefined,
   _jsxFileName = "/Volumes/MacData/work/ciscord-frontend.git/components/Main/Main.development/Landing/Landing.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
 
@@ -32,30 +29,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 6,
       columnNumber: 3
     }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  }, __jsx("div", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
-      columnNumber: 5
-    }
-  }, __jsx("link", {
-    rel: "stylesheet",
-    href: "https://unpkg.com/tachyons@4/css/tachyons.min.css",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
-    }
-  })), __jsx("div", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 7,
       columnNumber: 5
     }
   }, __jsx("div", {
@@ -63,21 +44,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, "Community for any websites."), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, "Save time building community pages. You can easily build your perfect community."), __jsx("a", {
@@ -86,7 +67,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 13,
       columnNumber: 9
     }
   }, "Watch Demo"), __jsx("img", {
@@ -95,7 +76,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 16,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -104,7 +85,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 17,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -113,7 +94,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 18,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -122,7 +103,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 19,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -131,7 +112,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 20,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -140,7 +121,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 21,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -149,7 +130,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 22,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -158,7 +139,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 23,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -167,7 +148,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 24,
       columnNumber: 9
     }
   }), __jsx("img", {
@@ -176,7 +157,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 25,
       columnNumber: 9
     }
   })), __jsx("div", {
@@ -184,14 +165,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 29,
       columnNumber: 7
     }
   }, __jsx("h2", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 30,
       columnNumber: 9
     }
   }, "Fast. Covenient. Effortless."), __jsx("div", {
@@ -199,7 +180,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 31,
       columnNumber: 9
     }
   }, __jsx("ul", {
@@ -207,35 +188,35 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 32,
       columnNumber: 11
     }
   }, __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 33,
       columnNumber: 13
     }
   }, "Over 20", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 35,
       columnNumber: 15
     }
   }), "Communities"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 38,
       columnNumber: 13
     }
   }, "Ask, Interview", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
+      lineNumber: 40,
       columnNumber: 15
     }
   }), "& Learn"), __jsx("li", {
@@ -243,42 +224,42 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 43,
       columnNumber: 13
     }
   }, "Third Party", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 45,
       columnNumber: 15
     }
   }), "Integrations"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 48,
       columnNumber: 13
     }
   }, "API", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 50,
       columnNumber: 15
     }
   }), "Support"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 53,
       columnNumber: 13
     }
   }, "Export Your", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 55,
       columnNumber: 15
     }
   }), "Data")), __jsx("div", {
@@ -286,7 +267,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 59,
       columnNumber: 11
     }
   }, __jsx("img", {
@@ -295,7 +276,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 60,
       columnNumber: 13
     }
   })))), __jsx("div", {
@@ -303,7 +284,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 69,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -311,21 +292,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 70,
       columnNumber: 9
     }
   }, __jsx("h3", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 71,
       columnNumber: 11
     }
   }, "A better way for community"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 72,
       columnNumber: 11
     }
   }, "Here are some ways we can help you build community."), __jsx("div", {
@@ -333,14 +314,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 73,
       columnNumber: 11
     }
   }, __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 74,
       columnNumber: 13
     }
   }, __jsx("li", {
@@ -348,28 +329,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 75,
       columnNumber: 15
     }
   }, "Finding problems"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 76,
       columnNumber: 15
     }
   }, "Most of business websites want to build community pages, but it will take effort to develop ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 77,
       columnNumber: 109
     }
   }))), __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 80,
       columnNumber: 13
     }
   }, __jsx("li", {
@@ -377,28 +358,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 81,
       columnNumber: 15
     }
   }, "Finding solutions"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 82,
       columnNumber: 15
     }
   }, "Discord can be a community platform for startups, but users don't like manage his discord account ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 84,
       columnNumber: 61
     }
   }))), __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 87,
       columnNumber: 13
     }
   }, __jsx("li", {
@@ -406,14 +387,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 88,
       columnNumber: 15
     }
   }, "Generate ideas"), __jsx("li", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 89,
       columnNumber: 15
     }
   }, "We are here to build community plugin for any websites"))))), __jsx("div", {
@@ -421,7 +402,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 98,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -429,35 +410,35 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 99,
       columnNumber: 9
     }
   }, __jsx("h4", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 100,
       columnNumber: 11
     }
   }, "Understand diversity and", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 102,
       columnNumber: 13
     }
   }), "be what people need"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113,
+      lineNumber: 105,
       columnNumber: 11
     }
   }, "Every community is different. Engage and ", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114,
+      lineNumber: 106,
       columnNumber: 54
     }
   }), " convert users into fans."))), __jsx("div", {
@@ -465,14 +446,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 113,
       columnNumber: 7
     }
   }, __jsx("h5", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 114,
       columnNumber: 9
     }
   }, "Secure. Scalable. Efficient."), __jsx("div", {
@@ -480,7 +461,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 115,
       columnNumber: 9
     }
   }, __jsx("div", {
@@ -488,28 +469,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 116,
       columnNumber: 11
     }
   }, __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 117,
       columnNumber: 13
     }
   }, "Secure your privacy and data", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127,
+      lineNumber: 119,
       columnNumber: 15
     }
   }), "with Ciscord"), __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130,
+      lineNumber: 122,
       columnNumber: 13
     }
   }, "With Ciscord, your data is secured beyond global security and privacy standards.")), __jsx("div", {
@@ -517,28 +498,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 127,
       columnNumber: 11
     }
   }, __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 128,
       columnNumber: 13
     }
   }, "Automate your research", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 130,
       columnNumber: 15
     }
   }), "and feedback collection"), __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 133,
       columnNumber: 13
     }
   }, "Use our tools to automate all your campaigns, so you can turn hours of research into minutes.")), __jsx("div", {
@@ -546,28 +527,28 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146,
+      lineNumber: 138,
       columnNumber: 11
     }
   }, __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 139,
       columnNumber: 13
     }
   }, "Scalable pricing to help you run more research at lower cost.", __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 141,
       columnNumber: 15
     }
   })), __jsx("span", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151,
+      lineNumber: 143,
       columnNumber: 13
     }
   }, "Get more research done, so you can generate more value and save cost.")))), __jsx("div", {
@@ -575,7 +556,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160,
+      lineNumber: 152,
       columnNumber: 7
     }
   }, __jsx("div", {
@@ -583,21 +564,21 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161,
+      lineNumber: 153,
       columnNumber: 9
     }
   }, __jsx("h6", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162,
+      lineNumber: 154,
       columnNumber: 11
     }
   }, "Find your solution"), __jsx("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163,
+      lineNumber: 155,
       columnNumber: 11
     }
   }, "Experience the best way to do research."), __jsx("a", {
@@ -605,7 +586,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164,
+      lineNumber: 156,
       columnNumber: 11
     }
   }, "Watch Demo")))), children);
@@ -617,49 +598,18 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 /*!********************************************************************!*\
   !*** ./components/Main/Main.development/Landing/Landing.styled.js ***!
   \********************************************************************/
-/*! exports provided: Container, Logo, Heading, SubHeading, Picture */
+/*! exports provided: Container */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Container", function() { return Container; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Heading", function() { return Heading; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubHeading", function() { return SubHeading; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Picture", function() { return Picture; });
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var public_logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! public/logo.svg */ "./public/logo.svg");
-/* harmony import */ var public_logo_svg__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(public_logo_svg__WEBPACK_IMPORTED_MODULE_1__);
-
 
 var Container = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].div.withConfig({
   displayName: "Landingstyled__Container",
   componentId: "sitieo-0"
 })(["display:flex;flex-direction:column;align-items:center;"]);
-var Logo = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img.attrs({
-  src: public_logo_svg__WEBPACK_IMPORTED_MODULE_1___default.a
-}).withConfig({
-  displayName: "Landingstyled__Logo",
-  componentId: "sitieo-1"
-})(["align-self:flex-start;margin:35px 0 0 97px;"]);
-var Heading = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h1.attrs({
-  className: 'f1 fw7 mb4'
-}).withConfig({
-  displayName: "Landingstyled__Heading",
-  componentId: "sitieo-2"
-})(["font-family:Avenirnext;margin:100px 0 0;text-transform:capitalize;"]);
-var SubHeading = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].h3.attrs({
-  className: 'f3 fw4 o-60'
-}).withConfig({
-  displayName: "Landingstyled__SubHeading",
-  componentId: "sitieo-3"
-})(["font-family:Avenirnext;margin:0;"]);
-var Picture = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].img.attrs({
-  className: 'w-60'
-}).withConfig({
-  displayName: "Landingstyled__Picture",
-  componentId: "sitieo-4"
-})(["margin-top:-80px;flex:0 0 auto;"]);
 
 /***/ }),
 
@@ -7827,17 +7777,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./public/logo.svg":
-/*!*************************!*\
-  !*** ./public/logo.svg ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTkiIGhlaWdodD0iNjYiIHZpZXdCb3g9IjAgMCA1OSA2NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTU0LjIyODggMTIuODA4MUw1MS44OTI0IDExLjQ1MjVMMzQuMzI3NSAxLjI4NTA2QzMzLjkzMzQgMS4wNTkxMiAzMy41MTEyIDAuODYxNDIyIDMzLjA4OSAwLjY5MTk2NUMzMS4zNDM3IDAuMjI1OTU5IDI5LjUgMS41MjUxMyAyOS41IDMuNDczODhWMTMuMDc2NEMyOS41IDEzLjg2NzIgMjkuMTc2MyAxNC41ODc0IDI4LjY1NTUgMTUuMTA5OUMyOC41Mjg5IDE1LjIzNyAyOC4zODgxIDE1LjM2NDEgMjguMjMzMyAxNS40NjI5QzI3LjkyMzcgMTUuNjc0OCAyNy41ODU5IDE1LjgxNiAyNy4yMDU5IDE1LjkwMDdDMjcuMDIyOSAxNS45NDMxIDI2LjgyNTkgMTUuOTU3MiAyNi42Mjg4IDE1Ljk1NzJINC43NzEyQzQuMzc3MSAxNS45NTcyIDQuMDExMiAxNS45OTk2IDMuNjQ1MyAxNi4wODQzQzMuNDA2IDE2LjE0MDggMy4xNjY3IDE2LjIyNTUgMi45NDE2IDE2LjMxMDJDMi44MjkgMTYuMzUyNiAyLjcxNjQgMTYuNDA5MSAyLjYxNzggMTYuNDY1NkMyLjI5NDEgMTYuNjM1IDEuOTg0NSAxNi44MzI3IDEuNzE3MSAxNy4wNTg3QzEuNDM1NiAxNy4yODQ2IDEuMTk2MyAxNy41NTI5IDAuOTcxMSAxNy44MzUzQzAuNjc1NiAxOC4yMTY2IDAuNDUwNCAxOC42NTQ0IDAuMjgxNSAxOS4xMDYzQzAuMDk4NDk5OSAxOS44NTQ3IDAgMjAuNjE3MyAwIDIxLjQwODFWNDQuMjE0MUMwIDQ3LjYzMTUgMS44MTU2IDUwLjc5NDcgNC43NzEyIDUyLjUwMzRMMTEuODA4NCA1Ni41ODQ1TDI0LjcyODggNjQuMDY4OEMyNy42ODQ0IDY1Ljc3NzUgMzEuMzE1NiA2NS43Nzc1IDM0LjI3MTIgNjQuMDY4OEw0Ny4xOTE2IDU2LjU4NDVMNTQuMjI4OCA1Mi41MDM0QzU3LjE4NDQgNTAuNzk0NyA1OSA0Ny42MzE1IDU5IDQ0LjIxNDFWMjEuMTExNUM1OSAxNy42OCA1Ny4xNzAzIDE0LjUxNjggNTQuMjI4OCAxMi44MDgxWk00NS44ODI2IDQwLjExODlDNDQuNjg2MyA0My40Mzc0IDQyLjUzMjkgNDYuMjkgMzkuNjQ3NyA0OC4zNTE3QzM2LjcwNjEgNTAuNDU1OCAzMy4yMjk3IDUxLjU3MTQgMjkuNTk4NSA1MS41NzE0QzI1Ljk2NzMgNTEuNTcxNCAyMi40OTA5IDUwLjQ1NTggMTkuNTQ5NCA0OC4zNTE3QzE2LjY2NDEgNDYuMjkgMTQuNTEwNyA0My40Mzc0IDEzLjMxNDQgNDAuMTE4OUMxMi44MzU5IDM4Ljc5MTUgMTMuNTI1NSAzNy4zMDg3IDE0Ljg0ODUgMzYuODI4NkMxNi4xNzE1IDM2LjM0ODUgMTcuNjQ5MyAzNy4wNDA0IDE4LjEyNzkgMzguMzY3OUMxOS44NzMxIDQzLjE5NzQgMjQuNDc1NCA0Ni40MzEyIDI5LjU5ODUgNDYuNDMxMkMzNC43MjE2IDQ2LjQzMTIgMzkuMzIzOSA0My4xODMzIDQxLjA2OTIgMzguMzY3OUM0MS41NDc3IDM3LjA0MDQgNDMuMDExNCAzNi4zNDg1IDQ0LjM0ODUgMzYuODI4NkM0NS42NzE1IDM3LjMwODcgNDYuMzYxMiAzOC43OTE1IDQ1Ljg4MjYgNDAuMTE4OVoiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcikiLz4KPHBhdGggZD0iTTEuNzE3MSAxNy4wNTg3QzEuOTk4NiAxNi44MzI3IDIuMjk0MSAxNi42MjA5IDIuNjE3OCAxNi40NjU2QzIuNzMwNCAxNi40MDkxIDIuODQzIDE2LjM2NjcgMi45NDE2IDE2LjMxMDJDMy4xNjY4IDE2LjIxMTQgMy40MDYgMTYuMTQwOCAzLjY0NTMgMTYuMDg0M0M0LjAxMTIgMTUuOTk5NSA0LjM3NzIgMTUuOTU3MiA0Ljc3MTIgMTUuOTU3MkgyNi42Mjg4QzI2LjgyNTkgMTUuOTU3MiAyNy4wMjI5IDE1Ljk0MzEgMjcuMjA1OSAxNS45MDA3QzI3LjU3MTggMTUuODMwMSAyNy45MjM3IDE1LjY3NDggMjguMjMzMyAxNS40NjI5QzI4LjM4ODEgMTUuMzY0MSAyOC41Mjg5IDE1LjIzNyAyOC42NTU1IDE1LjEwOTlDMjkuMTc2MyAxNC41ODc0IDI5LjUgMTMuODY3MiAyOS41IDEzLjA3NjRWMy40NzM4N0MyOS41IDEuNTI1MTEgMzEuMzQzOCAwLjIyNTk0MiAzMy4wODkgMC42OTE5NDlDMzEuOTM0OSAwLjIyNTk0MiAzMC43MTA0IDAgMjkuNSAwQzI3LjgzOTIgMC4wMTQxMjE0IDI2LjE3ODQgMC40NTE4ODUgMjQuNzAwNiAxLjMyNzQxTDQuNzAwOSAxMy4xNjExQzMuNTA0NSAxMy44NjcyIDIuNDkxMiAxNC44Mjc1IDEuNzE3MSAxNS45NDMxQzEuMDQxNSAxNi45MDMzIDAuNTYzMDAyIDE3Ljk3NjUgMC4yODE1MDIgMTkuMTIwNEMwLjQ1MDQwMiAxOC42NTQ0IDAuNjc1NjAyIDE4LjIzMDcgMC45NzExMDIgMTcuODQ5NUMxLjE4MjMgMTcuNTUyOSAxLjQzNTYgMTcuMjg0NiAxLjcxNzEgMTcuMDU4N1oiIGZpbGw9InVybCgjcGFpbnQxX2xpbmVhcikiLz4KCjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSIxMy4zNDM4IiB5MT0iOC40OTMzNSIgeDI9IjQ2LjE1NTQiIHkyPSI1Ny4yNjAxIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0RThGRkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjA1OTUyMjkiIHN0b3AtY29sb3I9IiM1Nzk4RkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjIyOTEiIHN0b3AtY29sb3I9IiM2Q0FDRkUiLz4KPHN0b3Agb2Zmc2V0PSIwLjQxOTQiIHN0b3AtY29sb3I9IiM3QkJCRkUiLz4KPHN0b3Agb2Zmc2V0PSIwLjY0NTciIHN0b3AtY29sb3I9IiM4M0MzRkUiLz4KCjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQxX2xpbmVhciIgeDE9IjExLjcxNjMiIHkxPSI0LjMwOTg3IiB4Mj0iMjMuOTA1NSIgeTI9IjE3LjkzMSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjQjZFNEY5Ii8+CjxzdG9wIG9mZnNldD0iMC42MjQyIiBzdG9wLWNvbG9yPSIjOTBDQ0ZEIi8+CjxzdG9wIG9mZnNldD0iMC43Njk5IiBzdG9wLWNvbG9yPSIjODZDNkZFIi8+CjwvbGluZWFyR3JhZGllbnQ+Cgo8L2RlZnM+Cjwvc3ZnPgo="
-
-/***/ }),
-
 /***/ "./public/widget-icon.svg":
 /*!********************************!*\
   !*** ./public/widget-icon.svg ***!
@@ -7849,7 +7788,7 @@ module.exports = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTkiIGhlaWdodD0iNjYi
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!**************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FVolumes%2FMacData%2Fwork%2Fciscord-frontend.git%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************/
@@ -7872,5 +7811,5 @@ module.exports = dll_baf2da1431b42afc626f;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[4,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

@@ -29,9 +29,9 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en-US">
         <Head>
-          <title>ciscord</title>
+          <title>ciscord, biznessapps</title>
           <meta charSet="utf-8" />
           <meta
             name="viewport"

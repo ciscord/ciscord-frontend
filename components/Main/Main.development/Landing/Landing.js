@@ -1,17 +1,9 @@
 import Head from 'next/head';
 import * as S from './Landing.styled';
-import './normalize.css'
 import "./index2.css"
 
 export default ({ children }) => (
   <S.Container>
-    <Head>
-      <link
-        rel="stylesheet"
-        href="https://unpkg.com/tachyons@4/css/tachyons.min.css"
-      />
-    </Head>
-    
     <div>
       <div className="first-block">
         <h1>Community for any websites.</h1>

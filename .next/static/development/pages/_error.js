@@ -5641,7 +5641,7 @@ var Error = /*#__PURE__*/function (_Component) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 7:
 /*!*********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FVolumes%2FMacData%2Fwork%2Fciscord-frontend.git%2Fpages%2F_error.js ***!
   \*********************************************************************************************************************************************/
@@ -5664,5 +5664,5 @@ module.exports = dll_baf2da1431b42afc626f;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[7,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=_error.js.map
