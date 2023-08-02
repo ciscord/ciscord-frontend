@@ -11,7 +11,7 @@ npm run dev
 ![ciscord](screenshots/ciscord.png)
 
 # Landing
-[https://biznessapps.org](https://ciscord.gatsbyjs.io/)
+https://ciscord.gatsbyjs.io
 
 # Widget
 https://github.com/ciscord/ciscord-widget
